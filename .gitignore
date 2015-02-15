@@ -18,3 +18,7 @@
 *.fls
 *.png
 *.docx
+*.tif*
+*.eps
+*.ai
+
