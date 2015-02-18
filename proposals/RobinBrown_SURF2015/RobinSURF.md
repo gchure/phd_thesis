@@ -16,7 +16,7 @@ that genes have been transferred between species, phyla, and even
 domains over the course of evolutionary history. It has been estimated
 that in the course of proteobacterial evolution, 75% of all protein
 families have experienced 1.9 horizontal gene transfer (HGT) events^1^.
-Vertical gene transfer, and its implications with respect to evolution
+Vertical gene transfer and its implications with respect to evolution
 has been studied extensively and is well understood. Over the past
 several decades, horizontal gene transfer in prokaryotes has received a
 considerable amount of study, yet there is still much that remains
@@ -35,16 +35,17 @@ mechanisms of HGT – transformation, conjugation, and transduction.
 Transformation occurs when a cell picks up exogenous DNA from its
 environment and maintains it in a heritable form. This process is rife
 with challenges as the incredibly hydrophilic DNA needs to cross the
-remarkably hydrophobic barrier of the cell wall, evade the restriction
-systems of the host bacterium, and either integrate into the chromosome
-or circularize and persist as a plasmid. Such precise procedure often
-requires an impressive amount of inter- (and sometimes intra-) cellular
-communication. Many cells have a well-defined state of gene expression,
-called the “competence state”, in where the cellular machinery is built
-to facilitate genetic transfer. The “competence state” varies widely
-from organism to organism; some genomes show evidence of horizontal gene
-transfer yet lack characteristics specific to known competence states in
-other organisms.
+hydrophobic barrier of the cell wall, evade the restriction systems of
+the host bacterium, and either integrate into the chromosome or
+circularize and persist as a plasmid. Such precise procedure often
+requires an impressive amount of inter- (and in some cases intra-)
+cellular communication. Many cells have a well-defined state of gene
+expression, called the “competence state”, in where the cellular
+machinery is built to facilitate genetic transfer. The gene expression
+patterns of the competence state varies widely from organism to
+organism; some genomes show evidence of horizontal gene transfer yet
+lack characteristics specific to known competence states in other
+organisms.
 
 Another method of horizontal gene transfer is bacterial conjugation, in
 which a donor cell transfers a plasmid or transposon to a recipient cell
@@ -69,16 +70,16 @@ or some other cell. Transduction is the only known method of long-range
 gene transfer, and is the topic of my research. Transduction is the
 process in which genetic material is transferred from one bacterium to
 another through a virus proxy, called a bacteriophage. Once the virus
-infects the cell, transduction can then enter one of two states, the
-lysogenic state or the lytic state. In the lysogenic state, the
-bacterium integrates the foreign genetic material into its own genome,
-where it can sit for generations while the cell continues to live and
-reproduce normally. In the lytic state, the viral DNA is not integrated
-into the cell’s genome, but continues to replicate until the cells
-bursts and releases the phage into the environment, where it can infect
-other bacteria. Occasionally, viruses sometimes pack segments of the
-host bacteria’s genome instead of viral DNA in its capsid by accident.
-In this situation, the virus cannot enter the lytic or lysogenic state.
+infects the cell the virus can enter either of two fates - the lysogenic
+state or the lytic state. In the lysogenic state, the bacterium
+integrates the foreign genetic material into its own genome, where it
+can sit for generations while the cell continues to live and reproduce
+normally. In the lytic state, the viral DNA is not integrated into the
+cell’s genome, but continues to replicate until the cells bursts and
+releases the phage into the environment, where it can infect other
+bacteria. Occasionally, viruses sometimes pack segments of the host
+bacteria’s genome instead of viral DNA in its capsid by accident. In
+this situation, the virus cannot enter the lytic or lysogenic state.
 Instead, the virus can only donate segments of the host’s genome to the
 recipient. Transduction is believed to be a significant factor in the
 development of mosaic genomes, making it a process of interest in the
@@ -101,7 +102,7 @@ algorithms allow for a detailed study of the molecular nature of
 evolution at single molecule resolution.
 
 Griffin Chure and Rob Brewster, a graduate student and postdoctoral
-researcher in the Phillips group respectively have developed a
+researcher in the Phillips group respectively, have developed a
 genetically encoded system to observe the dynamics of individual DNA
 molecules in living bacterial cells. Specific low copy-number plasmids
 use protein partitioning systems to ensure faithful inheritance of the
@@ -115,79 +116,131 @@ DNA. This results in a high concentration of ParB protein in a small
 volume surrounding the *parS* site. The Phillips lab has exploited this
 system to observe individual DNA molecules by fusing a YGFP fluorophore
 to the ParB protein and has inserted this fusion into the *gspI* locus
-of the chromosome. In the absence of *parS* sequence, the YGFP-parB
+of the chromosome. In the absence of *parS* sequence, the YGFP-ParB
 proteins are uniformly distributed through the cell. However, upon
 addition of a *parS* site, on a plasmid or introduced through phage
-infection, the YGFP-parB proteins quickly cluster at the *parS* site
+infection, the YGFP-ParB proteins quickly cluster at the *parS* site
 producing a bright puncta within the cell allowing observation of the
 spatial distribution and movement of the DNA within the cell. Because
 YGFP-ParB is being constitutively expressed, this system functions as an
-instantaneous reporter. This system does not rely on the transcription,
+instantaneous reporter and does not rely on the transcription,
 translation, and maturation of conventional fluorescent reporter
 systems.
 
-Using this system, I plan to observe and quantify the frequency of
-transduction of different genes, the rate and dynamics of homologous
-recombination of the transduced fragment, and the effect transduction
-has on the evolution of bacterial colonies. By integrating the *parS*
-sequence into various regions of the chromosome, I will be able to
-measure and compare the differences in transduction frequency of
-different loci. Is the frequency of transduction of “accessory genes”
-(such as antibiotic resistance elements) the same as “core genes” (such
-as 16s rRNA)? The differences in gene transfer as a function of gene
-type can be measured both in bulk and at single-cell resolution. To
-perform this measurement, we will need to insert a reporter system at
-several sites on the genome and measuring the frequency that it is
-found.
+Using this system, I plan to observe transduction at single-cell
+resolution to quantify the frequency of bacterial gene transfer through
+transduction. In order to study transduction at this scale, I will use a
+phage that will always enter the lytic state so that we may determine if
+the bacteria has been infected- the bacteria will surely burst and die
+if the phage is in the lytic state indicating viral infection.
+Furthermore, the presence of bright puncta will indicate successful
+~~integration~~ transduction **(Not necessarily. The puncta will
+indicate that the DNA inside the cell. The difference in rate of
+diffusion will tell if it has been integrated or not)** whereas uniform
+fluorescence throughout the cell will indicate that the *parS* has not
+been successfully transduced into the acceptor cytosol. By measuring the
+difference in the rate of diffusion of the puncta, I will be able to
+differentiate between transduced fragments that are integrated into the
+acceptor chromosome and those that are linear and diffusing in the cell.
+Thus, the ParBS visualization system will allow us to determine if each
+individual cell has undergone successful transduction. As a result, we
+will be able to determine the frequency of transduction on a single-cell
+level.
 
-![](media/image1.png)In order to study transduction at this scale, we
-will need to use a phage that will always enter the lytic state so that
-we may determine if a bacterium has been infected – the bacterium will
-surely burst and die if that phage is in the lytic state. Furthermore, I
-would like to study to dynamics of recombination into the host genome.
-Being able to visualize recombination at the single-molecule level would
-provide valuable insight on the frequency of successful integration as
-it would allow us to understand the process of integration and the
-obstacles that must be overcome to allow for successful integration.
-Below, I outline an experimental procedure that will allow us to track
-the free DNA and determine when it has been integrated into the
-bacterial genome.
+This paragraph is good, but you don’t really explain how you will watch
+the frequency of gene transfer. Here, you should give a brief
+description. “I will integrate the *parS* system into conventional
+gene-replacement loci and watch for the transfer of this region into
+YGFP-ParB expresing cells as is described in Figure 1.”
 
-Once I have determined the frequency of gene transfer through
-transduction, I would like to determine if there is a difference in the
-transfer of different gene types – core genes or accessory genes. T
-Finally, I would like to study how different conditions affect
-transduction. For example, the effect of selective pressure, stressful
-states, and the presence of an antibiotic on the frequency of successful
-transduction. Antibiotics, specifically, have the potential to give us
-key insight into the evolution of bacterial colonies. By infecting a
-bacteria with phage raised against an antibiotic resistant bug and
-placing them in stressful concentrations of antibiotic, we can gain
-insight into how some bacterial colonies come into evolutionary
-advantages like antibiotic resistance. Studying the impact of different
-environments can both be done at the single-cell and bulk level.
+~~Once the rate of gene transfer through transduction has been
+quantified, I would like to study the rate and dynamics of homologous
+recombination of the transduced fragment.~~ ~~Being able to visualize
+recombination at the single-molecule level would provide valuable
+insight on the frequency of successful integration as it would allow us
+to understand the process of integration and the obstacles that must be
+overcome to allow for successful integration. This can be through the
+system developed by Griffin Chure and Rob Brewster,~~ ~~in which the
+cooperative binding of the ParB protein to a *parS* DNA sequence results
+in bright puncta~~ ~~at the location of the~~ parS ~~site. This system
+will allow us to track the spatial distribution and movement of the DNA
+within the cell, thus giving us a method to visualize and understand the
+integration of transduced DNA. ~~
 
-The bulk assays will be done using traditional biological methods. This
-can be done by plating onto selective plates and counting colonies as a
-function of the total number of surviving cells.
+**(The above paragraph doesn’t really add anything new. It feels that
+you are simply repeating what we said two paragraphs ago when we
+described the visualization system. I think you are trying to explain
+that we will be able to observe fragments as they enter the cell,
+diffuse around, and recombine with the genome by measuring the diffusion
+of the spot in the cell. I kind of addressed this with my comment in red
+above. I would try to rewrite this paragraph to make it more clear that
+this is a separate goal of the proposal. As it is written, it feels like
+a brief summary of the goal of the proposal)**
 
-Image processing and data collection will be written in Python.
+By specifically integrating the *parS* sequence into various regions of
+the chromosome, I will be able to measure and compare the differences in
+transduction frequency of different loci to determine if the frequency
+of transduction of “accessory genes” (such as antibiotic resistance
+elements) is the same as “core genes” (such as 16s rRNA). The
+differences in gene transfer as a function of gene type can be measured
+in bulk by inserting a reporter system at several sites on the genome
+and measuring the frequency that it is found. This measurement can also
+be performed at single-cell resolution using the same methods outlined
+above.
 
-![](media/image2.png)After we finish collecting data, we will be able to
-build a quantitative statistical model describing the frequency at which
-genetic information is transferred through transduction.
+**Very good and straight to the point. Add a sentence or two explaining
+why this is worth investigating. A transfer of a 16s rRNA gene could
+potentially be catastrophic if it’s an interspecies transfer whereas the
+shuttling of accessory genes may be less of a burden for the cell. Which
+would influence the evolution of the bacterium more? This kind of leads
+into your next objective I think. **
 
-Figure 2 details a ten-week plan of research and objectives for each
-week. The unique construction of this research allows for multiple
-objectives to be studied at once. For the first week and a half of my
-research, I will become familiarized with the microscopy equipment in
-the lab along with the specifics of molecular biology and raising of
-bacteriophage stocks. The DNA visualization system described in the
-methods has already been constructed allowing for the beginning of
-experiments immediately. For the entirety of the research, I will clone
-the *parS* DNA sequence into various regions of the *E. coli* host
-genome. Due to the close relationship of my objectives, I am able to
-conduct measurements for several of them at the same time.
+![](media/image1.png)
+
+Finally, I would like to study how different conditions affect the
+evolutionary implications of transduction. ~~For example, the effect of
+selective pressure, stressful states, and the presence of an antibiotic
+on the frequency of successful transduction.~~ The selective pressures
+of the environment (such as a limiting concentration of a carbon source
+or presence of an antibiotic) would certainly favor the transfer of
+genetic material that confers and advantage to the acceptor cell.
+Antibiotics, specifically, have the potential to give us key insight
+into the evolution of bacterial colonies. By infecting a bacteria with
+phage raised against an antibiotic resistant ~~bug~~ host and placing
+them in stressful concentrations (yet non-fatal concentrations) of
+antibiotic, we can gain insight into how some bacterial colonies come
+into evolutionary advantages like antibiotic resistance. This experiment
+can be carried out in bulk scale by conducting a bulk assay as well as
+with single-cell resolution. The procedure for this objective is very
+similar to the procedure for the other objectives- an antibiotic
+resistance cassette will be integrated along with the *parS sequence*
+into different loci. Then we can observe the integration of the genome
+sequences on a single-cell scale, as well as place entire colonies of
+bacteria in an antibiotic to determine on a bulk scale how many have the
+gene for antibiotic resistance.
+
+After I finish collecting data, I will be able to build a quantitative
+statistical model describing the frequency at which genetic information
+is transferred through transduction.
+
+**It is important to mention that you will do all of these experiments
+in bulk as well as in single molecule, not just the final objective.
+This will let us quantify how much of a difference is there between what
+we see when looking at single cells versus entire cultures of bacteria.
+I suspect they will be quite different. **
+
+![](media/image2.png)Figure 2 details a ten-week plan of research and
+objectives for each week. The unique construction of this research
+allows for multiple objectives to be studied at once. For the first week
+and a half of my research, I will become familiarized with the
+microscopy equipment in the lab along with the specifics of molecular
+biology and raising of bacteriophage stocks. The DNA visualization
+system described in the methods has already been constructed allowing
+for the beginning of experiments immediately. For the entirety of the
+research, I will clone the *parS* DNA sequence into various regions of
+the *E. coli* host genome. Due to the close relationship of my
+objectives, I am able to conduct measurements for several of them at the
+same time.
 
 All of evolution is driven by molecular behavior within the cell. While
 there has been much advancement in understanding the mechanisms of
@@ -202,12 +255,6 @@ physics. By building a quantitative statistical model describing the
 frequency at which genetic information is transferred through
 transduction, we will be able to gain key insight into the evolution and
 assembly of the bacterial genome.
-
-**If you really want this we can squeeze it in, but the healthcare
-aspect feels a little forced and out of place.** ~~In the realm of
-healthcare, antibiotic resistant bacteria is becoming an increasingly
-prevalent concern. As a result, understanding the evolution of these
-bacteria has important implications with regards to human health.~~
 
 1 T. Kloesges, O. Popa, W. Martin, T. Dagan, Mol. Biol. Evol. 28(2),
 1057 (2011).
