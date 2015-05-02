@@ -1,5 +1,7 @@
 \input{../../tex_tools/candidacy_preamble.tex}
+\usepackage{textcomp}
 
+\setcitestyle{square}
 \title{Probing the Physical Basis of Genomic Promiscuity in Bacterial Evolution}
 \author{Griffin Chure - Research Candidacy Proposal\\
 	\textit{\small California Institute of Technology - Biochemistry and Molecular
@@ -10,7 +12,7 @@
 \maketitle
 \begin{abstract}
 	Bacterial populations live in a fertile soup of foreign genetic
-	material[CITATION]. Whether by viral infection, conjugative transfer, or
+	material. Whether by viral infection, conjugative transfer, or
 	direct uptake of DNA through transformation, bacteria frequently share
 	their genetic information with their neighbors, including those of
 	different species, strongly influencing bacterial evolution. In this
@@ -20,54 +22,67 @@
 	coli} and \textit{Bacillus subtilis} that allows for the observation of
 	specific DNA molecules as they are transfered between individual cells.
 	The orthogonal nature of the visualization system allows for \textit{in
-	vivo} studies. In addition, I wish to form a better understanding of the
-	evolutionary consequences horizontal gene transfer on the assembly of
+	vivo} studies. In addition, this research will advance our understanding of the
+	evolutionary consequences horizontal gene transfer on the formation of
 	microbial communities. 
 \end{abstract}
-\section*{Introduction}
-Understanding the ebb and flow of genetic information through biological
-lineages and communities has long been the focal point of biological inquiry.
-Gregor Mendel set the stage for genetics. \cite{Syvanen:2012jn}
 
+\section*{Introduction}
+Understanding the ebb and flow of genetic information through lineages and
+communities has long been the focal point of biological inquiry.  
+
+The genome, however, is not limited only to travel through a family tree.
 Recent advancements in sequencing and molecular biological techniques have shown
 that vertical transmission of genetic material from parent to daughter cell is
 not the whole story. 
 
-\begin{itemize}
-	\item Allows for an immediate response to changing environmental state.
-	\item Cells that are more prone to horizontal gene transfer can reap the
-		benefits from their dying neighbors. 
-	\item The immediate change in geneotype 
-\end{itemize}
-\begin{itemize}
-	\item  
-	\item Cite the recent paper proving that the marine snail shuttles
-		photosynthesis genes from cyanobacteria into it's own genome and
-		explain how this is so fucking amazing. Not only does the snail
-		incorporate it, it expresses it!
-	\item Explain that the genetic constructs built in the lab could get
+
+Horizontal Gene Transfer (HGT) is the transmission of genetic material, whether
+it be informational or operational, from one organism to another through means
+other than sexual or asexual reproduction. In essence, it is the incorporation
+of foreign genetic information into your own. 
+
+HGT allows for an immediate variability in genotype not possible only through
+mutation and descent with modification. Antibiotic resistance cassettes are the
+most cited examples of HGT, although the range of genetic information that can
+(and has) been transferred is vast and it's role evolution is still not well
+understood.
+
+
+HGT is not limited to the prokaryotic domain and has been shown to occur in the
+eukaryotes from the transfer of XXXX from bacterial hosts to plants (CITE) to
+the transfer of photosynthetic genes from cyanobacteria to slug somatic cells.
+
+The role that HGT plays in the evolution of prokaryotes is both more dramatic
+and abundant than in the eukaryota. The short generation times, physical size,
+and modern molecular-biological tool set make bacteria the model organisms for
+studying not only the molecular details of how the DNA is transported into the
+cell but for a quantitative dissection of the fitness effects such transfers can
+cause.
+
+	Explain that the genetic constructs built in the lab could get
 		into the environment and permanently imprint themselves on the
 		genome of nature. 
-\end{itemize}
+
 \subsection*{Conjugation}
 Through the early 1940's, our understanding of bacterial phylogeny and
 prokaryotic inheritance as a whole had been limited to the accumulation of
 mutations through vertical transmission of genetic information from cell to
 cell. While Frederick Griffith, Avery MacLeod, and others had shown that
-bacteria could be "transformed" into pathogenicity by
-DNA\cite{Griffith:1928vg}\cite{Avery:2014wx}, there had been little to no
+bacteria could be ``transformed" into pathogenicity by
+DNA\cite{Griffith:1928vg, Avery:2014wx} there had been little to no
 investigation into its affect on bacterial evolution. The first evidence of
 genetic recombination in bacterial specimens came from the work of Tatum and
 Lederberg in 1947 which showed that bacteria can transfer information with their
-neighbors by entering a "sexual stage."\cite{Tatum:1947va}
+neighbors by entering a ``sexual stage"\cite{Tatum:1947va}.
 
 In the 70 years since the discovery, the molecular details of bacterial
-conjugation have been studied extensively. Key features
+conjugation have been studied extensively. 
 \begin{itemize}
 	\item Fertility element (HFR) encodes all genes necessary for transfer.
 		This is also the genetic element that gets transfered. This
 		means that so long as it successfully transfers in it entirety,
-		the recieving cell will become able to pass along the plasmid. 
+		the receiving cell will become able to pass along the plasmid. 
 	\item The plasmid has a specific site \textit{oriT} where the transfer
 		and begins and ends. It is at this site that relaxase proteins
 		nick the plasmid allowing a single strand to be passed through
@@ -82,56 +97,176 @@ conjugation have been studied extensively. Key features
 	\item Because a F element is needed with a specific start and end site,
 		cells are limited in what genes can be transfered. Unlike in
 		transformation and transduction, it is very specific in it's transfer. 
-	
+	\item ICEs are mobile elements which have been integrated into the
+		chromosome and have the ability to be transfered via
+		conjugation, but do not necessarily encode the conjugation
+		machinery. 
+	\item For mobile elements to be self-transmissible, they must contain
+		information for maintenance, dissemination, and regulation
+		\cite{Burrus:2004ca}. Unlike plasmids, integration into the
+		chromosome of it's host ensures vertical transmission into the
+		hosts' progeny. The probability of loss is much lower than in
+		the case of plasmids which are autonomous elements in most
+		cases. Most ICEs contain a recombinase which integrates into a
+		specific locus on the host genome (\textit{attB}) and a locus on
+		the ICE (\textit{attP})\cite{Burrus:2004ca}.
+	\item ICE frequently contain another factor, excisionase (\textit{Xis}) which is
+		responsible for the excision of the ICE from the host chromosome
+		after integration. WHAT IS THE FUNCTION EXACTLY?
+	\item Capable of transferring an entire genome into a recipient. This is
+		dependent on the stability of the cell suspension as the pilus
+		connection is fragile and susceptible to mechanical stress.
+
+	\item  DNA is most frequently transferred between cells during
+		conjugation as a single strand. This requires four components -
+		the relaxase for nicking and binding of the ssDNA, a coupling
+		protein which binds and transfers the ssDNA between the donor
+		membranes, and a type IV seqcrion system (T4SS) which establish
+		the contact between the two cells and serves as a conduit for
+		the ssDNA to transfer (CHECK) \cite{Guglielmini:2014bc}. As T4SS
+		are highly diverse structures and are widely distributed across
+		bacterial species, not all mobile elements encode T4SS and use
+		them \textit{in trans}.
+	\item As cell-cell contact is necessary, this type of horizontal gene
+		transfer is important in dense microbial communities, such as in
+		biofilms. This transfer is very short range, unlike
+		transformation and transduction.
 \end{itemize}
 
-The features of the pilus are as follows.
-\begin{itemize}
-	\item The transmembrane conduit is related to the typeIV secretion
-		system. It is composed of about ten different proteins that span
-		both the inner and outer membrane of gram-negative bacteria.
-	\item Need more details. Talk about the Ecoli F pilus and F element and
-		how it contrasts the TypeIV pilus.
-\end{itemize}
-
-
-Many of the experiments which characterized this system were done \textit{in
-vitro}. This leaves many of the physiological questions unanswered. It is still
-unknown what events occur in the recipient cell to stabilize the plasmid as it
-is transfered as a single strand. It is also unknown how the transfer process
-interfaces with the myriad of other DNA maintenance processes such as
-replication and partitioning. 
+Many of the experiments which characterized this system were done either \textit{in
+vitro} or in bulk, leaving many questions regarding the cellular and molecular
+events unanswered. Such questions, such as the frequency of conjugation in a
+mixed population of donors and recipients still remain unanswered.  
 
 There have been some \textit{in vivo} which have helped shed light on how the
-conjugal elements traverse bacterial communities. Briefly (in five or six
-sentences) summarize the babic paper. \cite{Babic:2008bl}
+conjugal elements traverse bacterial communities. Babi\'{c} et al., 2008 used
+real-time fluorescence microscopy to measure the frequency of conjugative
+transfer within a mixed population of donors and acceptors. To visualize the
+horizontally transferred DNA, the authors created a SeqA-YFP fusion which
+specifically and strongly binds hemimethylated DNA. DNA from an F+ Dam+
+\textit{E. coli} strain was mixed with an F- Dam- recipient. The
+methylated DNA transferred into the recipient was bound by SeqA-YFP upon
+formation of the hemimethylated duplex forming a bright foci within the cell.
+This allowed for observation of transfer of any DNA sequence. While this proved
+useful for measuring the frequency of transfer, it provided little-to-no
+information regarding what was transferred. The authors observed transfer
+happening over a very short period of time after incubation and up to great
+distances apart (with a maximum of 12$\mu$m), proving that DNA can be
+transferred through the F pilus directly.
 
-\begin{itemize}
+This shows that single-molecule and single-cell approaches to studying
+horizontal gene transfer can provide deep insight into both the molecular
+mechanisms as well as the frequency of transfer \cite{Babic:2008bl}.
 
-	\item Brief overview of how it was discovered and how it led to the
-		minute definition of the bacterial genome.
-	\item Requires the presence of a fertility element.
-	\item Requires the assembly of a large pilus. Depends on other bacteria
-		being very close together
-	\item Keep this section short
-\end{itemize}
 
 \subsection*{Transduction}
+Bacteriophages are the most numerous forms of life on the planet. The global
+population is estimated to be on the order of 10$^{31}$ phage
+particles \cite{Comeau:2008jo}. This population is estimated to perform 2$\times
+10^{16}$ transduction events per second \cite{ChibaniChennoufi:2004gv}.
+
+
+Sequence based methods are often used to infer phage-mediated gene transfer.
+Genomic islands in an array of marine cyanobacteria are flanked by viral-like
+sequences, suggesting they were transferred through a transduction event
+relatively recently in their evolution\cite{Anonymous:2004vg, Palenik:2003ef}.
+
+The horizontal transfered can also have a profound effect on the evolution of
+viral genomes. While initially considered an oddity and attributed to
+contamination of free bacterial DNA, metagenomic and genotyping studies showed
+that a myriad of cellular genes have been incorporated into bacteriophage
+genomes such as the photosystem II core reaction center and electron transfer
+genes\cite{Anonymous:2004vg,Comeau:2008jo}.  This abundance of cellular genes
+buried within the phage genomes emphasizes the power phage can have in
+influencing the metabolic repertoire of their host. 
+
+The benefit is not only felt by the host bacterium, however. A body of evidence 
 \subsection*{Transformation}
+DNA is one of the largest and most hydrophillic biomolecules in nature and it's
+transfer from the environment into the crowded environment of the cytoplasm is
+no easy task. After traversing the rigid cell wall and the hydrophobic barrier
+of the cell membrane, the DNA must evade the myriad of restriction systems
+evolved to degrade the potentially hazardous foreign material. 
+
+
 \begin{itemize}
 	\item Natural transformation allows for gene transfer between organisms
 		who are not in the same host range for bacteriophage
 		(transduction) or conjugation.
-	\item 
-\end{itemize}<++>
+	\item Natural transformation is widespread in both gram negative and
+		gram positive bacteria despite the profound structural
+		differences in the cell boundary.
+	\item Gram positive and negative bacteria have evolved similar but
+		mechanistically different ways in which DNA is brought in from
+		the extracellular milieu.
+
+	\item \textit{Neisseria} and \textit{Pasteurellacae} preferentially uptake
+		DNA from related genera. This is achieved by recognizing a
+		specific uptake sequence that is similar to repeats present in
+		the respective genomes of each. How this sequence is recognized
+		still remains unknown. These species are the special cases
+	\item Taking up the wrong sequences can shift the specificity landscape\cite{Mell:2014dj}?
+
+\end{itemize}
+
 \subsection*{Special Cases}
+While conjugation, transformation, and transduction are the primary ways which
+DNA is horizontally transfered, there are other mechanisms which appear to
+facilitate HGT.
 \begin{itemize}
-	\item Nanotubes.
-	\item Gene Transfer Agents.
+	\item Gene Transfer Agents. Phage-derived elements. Capsid is too small
+		to accommodate it's own equipment and has evolved to transfer
+		other bits of DNA. 
+	\item Why is it released up on death of the organism or stress or
+		something? I don't entirely remember.
+\end{itemize}
+
+
+\subsection{HGT in Eukaryotes}
+\begin{itemize}
+	\item Prevalent in the plant world. Conjugation between bacteria and
+		plant cells has been observed.
+	\item Give example of cancer cells
+	\item Entire nuclear genomes can be transferred between plants after
+		grafting of roots. This has been experimentally shown to lead
+		to the evolution of novel species \cite{Fuentes:2014kr}. 
+	
+	\item  Give example of slug transfer with photosynthetic genes.
 \end{itemize}
 \subsection*{Evolutionary implications of HGT}
+
+The ubiquity and evolutionary importance of HGT is becoming increasingly
+apparent as more complete genomes are sequenced and made publicly available. As
+the microbial world is not limited only to the set of genes present in its own
+lineage, the "species tree" concept becomes difficult to interpret. From a
+mathematical framework, trees are defined as a framework in which there are no
+reticulations between nodes in a given branch. This type of model is not
+applicable to the microbial world where genes can flow in multiple dimensions.
+
+For nearly the past 60 years, the uniformity of the
+genetic code amongst all life was described by one of two models. The
+stereochemical model suggested a deterministic relationship between the chemical
+properties of the codon and it's amino acid \cite{Grafstein:1983wv} whereas the
+"frozen accident" model suggested that the genetic code could be arbitrary and
+was universally adopted as all life evolved from the last universal common
+ancestor\cite{Crick:1968wg}. There is a third possibility, however, that HGT
+exerted a selective pressure to allow the exchange of genetic information
+between species \cite{Syvanen:1985vv, Syvanen:2012jn}, forcing all life to adopt
+and optimize the same (or at least very similar) genetic
+code.\citet{Vestigian:2006va} demonstrated a unity between the stereochemical model
+and HGT. They showed computationally that a pool of individuals connected by
+avenues for HGT lead to the unification and optimization of a standard genetic
+code. 
+
+While HGT has received much experimental and theoretical attention over the past
+century, there are still gaping holes in our understanding of the deeper
+implications and influence on evolution as whole. Generating a complete picture
+of how genetic information is passed between organisms (both through vertical
+and horizontal) transmission is imperative not only to our understanding of the
+origin and diversification of microbes, but of the entire biosphere.
+
+
 \begin{itemize}
-	\item 	
 	\item Destruction of the 'tree' model of life. A network is more
 		appropriate, although computationally intractable.
 	\item Promoted the use of the universal genetic code? There is an
@@ -145,34 +280,40 @@ sentences) summarize the babic paper. \cite{Babic:2008bl}
 	\item Generating a complete picture of how genes are passed around (and
 		how frequently they do it) is imperative to the understanding of
 		the evolution of not only microbes, but of the entire biosphere. 
-	\item Horizontal transfer of genetic information is not limited to
-		genes. Regulatory sequences can be exchanged (cite the HRT
-		paper) leading to new and interesting patterns of regulation
-		which can have an affect on the composition of the environment
-		that are subtle but important.
-	\item I should estimate what portion of sequence space has been explored
-		in all of life. I should then estimate how long it would take a
-		single cell line to explore the same space. This should show
-		that HGT speeds up the process immensely, allowing cells to
-		speed-read sequence space without having to do all  of the heavy
-		lifting.
 \end{itemize}
+
+HGT is particularly studied by looking for the transfer of operational or
+protein-coding sequences.Horizontal transfer of genetic information is not
+limited to genes.  Regulatory sequences can be exchanged\cite{Oren:2014eea}
+leading to new and interesting patterns of regulation which can have an affect
+on the composition of the environment that are subtle but important.
+
+Horizontal transfer has the potential to drastically change the physiology of
+the organism not only through the transfer of informational and operational
+genes, but can rewire extant genetic circuits.
+
 \section*{Experimental Approach}
 \subsection*{Watching DNA flow in real-time}
+
+Measurements of transformation or transduction frequency has been performed
+almost entirely at the bulk scale, leaving many questions about what happens at
+the cellular level unanswered. In the case of bulk experiments, only the
+"winners" are actually measured as unstable or fatal transfer events are
+unobserved.Fluctuations at the scale that are relevant to environmental
+communities  (10$^2$ - 10$^3$ cells) [I need to find a citation for this] are
+drowned out when doing the experiments with saturated cultures (10$^9$ cells).
+Getting a picture at the single-cell level will greatly advance our
+understanding of how frequently genes are passed around and will let us quantify
+the effect it has on the development of communities. The effects felt by HGT
+begin with a single cell.  Being able to watch the first several cell divisions
+will help us measure these effects.
+
+
 \begin{itemize}
 	\item With all of the evidence of HGT, it's often impossible to
 		understand how it moved around relying on sequence alone. 
 	\item Bulk-scale studies are almost certainly and underestimate of the
-		frequency. Fluctuations at the scale that are relevant to
-		environmental communities  (10$^2$ - 10$^3$ cells) [I need to
-		find a citation for this] are drowned out when doing the
-		experiments with saturated cultures (10$^9$ cells). Getting a
-		picture at the single-cell level will greatly advance our
-		understanding of how frequently genes are passed around and will
-		let us quantify the effect it has on the development of
-		communities. The effects felt by HGT begin with a single cell.
-		Being able to watch the first several cell divisions will help
-		us measure these effects.
+		frequency. 	
 	\item Classical fluorescent reporters are useful but rely on a large
 		series of complex events to be detected. They must be properly
 		integrate, transcribed, translated, and then properly mature
@@ -197,7 +338,7 @@ sentences) summarize the babic paper. \cite{Babic:2008bl}
 		cooperative. Once ParB is bound to the DNA, the conformation
 		changes prompting cooperative association of other ParB
 		proteins. This results in an effect called 'spreading' where the
-		ParB proteins bind to the DNA nonspcifically but tightly because
+		ParB proteins bind to the DNA nonspecifically but tightly because
 		of the cooperative nature of ParB. This results in a high
 		concentration of the ParB proteins in a very small volume. By
 		fluorescently tagging ParB, removing ParA, and cloning
@@ -209,7 +350,6 @@ sentences) summarize the babic paper. \cite{Babic:2008bl}
 	\item Explain and use a figure to show that in the absence of DNA, the
 		cell is uniformly bright. When \textit{parS} is present, a
 		bright focus appears. 
-
 	\item I need make it clear what I have done on this system so far. I
 		should explain how I tried to make the two color system work but
 		decided a one-color system will allow for more simple
@@ -221,6 +361,9 @@ sentences) summarize the babic paper. \cite{Babic:2008bl}
 		spatial organization of the chromosome, but has never been
 		used to watch the flux of gene elements through the cell. This
 		has required more work than initially thought. 
+	\item  Need to show image of this working in \textit{E. coli} with
+		plasmids and integrated sites as well as in \textit{B. subtilis}
+		with working chromosomal sites. 
 \end{itemize}
 \subsection*{Measuring frequency of natural transformation in genetically
 tractable systems}
@@ -264,74 +407,115 @@ tractable systems}
 		what kind of differences there are between the frequency of
 		uptake and the frequency of entry to competence. I would then be
 		interesting to study how DNA is transferred between species.
+	\item Does uptake of DNA signal exit from the competence state? One
+		would imagine some kind of receptor for uptake to avoid
+		perpetually taking up DNA.	
+	\item How does frequency of uptake correlate to entry into the comptence
+		state? Will all competent cells eventually take up DNA or is
+		there some sweet spot? 
+	\item Does duration of the competence state depend on DNA uptake? Do
+		cells which took up DNA have a shorter or longer competence
+		state than cells who do not? Need to do time lapse and record
+		pComG activity. 
 	\item Using what I have learned from the well-characterized systems, I
 		can take this back to \textit{E. coli} and resume these studies.
+		Expression of TFoX (Sxy) coupled with $\lambda$-red
+		recombination allows for transformation of \textit{E. coli}
+		cells \cite{Sinha:2012eh}. Only one report of this phenomenon,
+		as TFoX has no known induction conditions. How frequently can
+		this actually occur? Using what I have learned working with a
+		naturally competent organism, perhaps I will be able to shed
+		light on the enigmatic competence state of \textit{E. coli}.
+ 
 \end{itemize}
-\subsection*{Observing transduction in phage P1 and $\lambda$}
-	\begin{itemize}
-		\item Both conjugation and natural transformation rely on being
-			within close proximity of the DNA. DNA doesn't last very
-			long in natural environments and conjugation relies on
-			bacteria being very close to each other spatially.
-			Transduction is a long-range form of gene transfer.
-			Viral elements are very stable in natural environments
-			(Find a citation for this).
-		\item Because of the persistence of viral particles, they have
-			the opportunity to stay in the environment through many
-			generations of bacteria. This can include cycles of
-			succession and changes in the members of the population. 
-			This means that genes that were advantageous (or harmful
-			) generations ago could come back into play through
-			transduction.
-		\item The transduction efficiency varies from phage to phage. 
-		\item I should discuss the different ways of packaging host
-			genome (headful vs. any DNA vs. other mechanisms).
-			Phage genomes are often several 10's of kilobases.
-			This means that many genes, even entire operons and
-			metabolic circuits, could be transferred horizontally
-			between organisms from a single transduction event. 
-		\item Like transformation, transduction has really only been
-			studied in the bulk often relying on a single infection
-			of a phage, proper integration of the selectable
-			element, and then expression of the selectable element
-			to generate a transductant. 
-		\item We would learn much from observing transduction at the
-			single cell level. We could get a better handle on the
-			frequency of transduction as well as how many trasducing
-			particles can infect a cell at once. Using the ParBS
-			system, we could be able to watch the DNA as it is
-			integrated into the genome by measuring the difference
-			in diffusion of the puncta.
-		\item Transduction often occurs at a low frequency, however,
-			meaning we either need some way to scan through many,
-			many cells and infections at once or we need to boost up
-			the frequency of transduction.
-		\item Phage P1 is a commonly used tool of molecular biology
-			because it is very lax with the DNA that it packages
-			into its capsid. This raises the efficiency of
-			transduction to a measureable level. 
-		\item The experimental procedure involves integrating the
-			\textit{parS} sequence into several different loci in a
-			host. These could be surrounding different metabolic
-			genes, accessory genes,  core genes etc. By integrating
-			many at the same time, we increase the probability of
-			having a detectable locus packaged into the phage.
-		\item We can then infect cells that are expressing the YGFP-ParB
-			construct and watch for the formation of puncta. With a
-			system where we can detect individual pieces of DNA, we
-			can ask all sorts of interesting questions. How viral
-			particles can transfer DNA at once? How frequently are
-			there infections where the DNA is degraded before
-			integration occurs? How rapidly after infection are
-			foreign genes integrated into the genome? How does this
-			integration frequency compare with the phage genome?
-		\item Previous studies in the Phillips lab have tracked the
-			ejection of phage DNA material into the cell. We can
-			expand on that by tracking \textit{specific} bits of
-			genetic material.
-	\end{itemize}
-\subsection*{Observing the influence of HGT on community organization}
 
+\subsection*{Observing transduction in phage P1 and $\lambda$}
+\begin{itemize}
+	\item Both conjugation and natural transformation rely on being within close proximity of the DNA. DNA doesn't last very
+		long in natural environments and conjugation relies on
+		bacteria being very close to each other spatially.
+		Transduction is a long-range form of gene transfer.
+		Viral elements are very stable in natural environments
+		(Find a citation for this).
+	\item Because of the persistence of viral particles, they have
+		the opportunity to stay in the environment through many
+		generations of bacteria. This can include cycles of
+		succession and changes in the members of the population. 
+		This means that genes that were advantageous (or harmful
+		) generations ago could come back into play through
+		transduction.
+	\item The transduction efficiency varies from phage to phage. 
+	\item I should discuss the different ways of packaging host
+		genome (headful vs. any DNA vs. other mechanisms).
+		Phage genomes are often several 10's of kilobases.
+		This means that many genes, even entire operons and
+		metabolic circuits, could be transferred horizontally
+		between organisms from a single transduction event. 
+	\item Like transformation, transduction has really only been
+		studied in the bulk often relying on a single infection
+		of a phage, proper integration of the selectable
+		element, and then expression of the selectable element
+		to generate a transductant. 
+	\item We would learn much from observing transduction at the
+		single cell level. We could get a better handle on the
+		frequency of transduction as well as how many trasducing
+		particles can infect a cell at once. Using the ParBS
+		system, we could be able to watch the DNA as it is
+		integrated into the genome by measuring the difference
+		in diffusion of the puncta.
+	\item Transduction often occurs at a low frequency, however,
+		meaning we either need some way to scan through many,
+		many cells and infections at once or we need to boost up
+		the frequency of transduction.
+	\item Phage P1 is a commonly used tool of molecular biology
+		because it is very lax with the DNA that it packages
+		into its capsid. This raises the efficiency of
+		transduction to a measureable level. 
+	\item The experimental procedure involves integrating the
+		\textit{parS} sequence into several different loci in a
+		host. These could be surrounding different metabolic
+		genes, accessory genes,  core genes etc. By integrating
+		many at the same time, we increase the probability of
+		having a detectable locus packaged into the phage.
+	\item We can then infect cells that are expressing the YGFP-ParB
+		construct and watch for the formation of puncta. With a
+		system where we can detect individual pieces of DNA, we
+		can ask all sorts of interesting questions. How viral
+		particles can transfer DNA at once? How frequently are
+		there infections where the DNA is degraded before
+		integration occurs? How rapidly after infection are
+		foreign genes integrated into the genome? How does this
+		integration frequency compare with the phage genome?
+	\item Previous studies in the Phillips lab have tracked the
+		ejection of phage DNA material into the cell. We can
+		expand on that by tracking \textit{specific} bits of
+		genetic material.
+
+\end{itemize}
+\subsection*{Probing the positional and/or functional dependence of HGT}
+\begin{itemize}
+	\item Can be performed by studying either and both transformation and transduction.
+	\item Previous bioinformatic studies have shown that operational rather
+		than informational genes are more prone to transfer [CITE]. This
+		However this does not take into consideration the neighboring
+		genes that were transfered.
+	\item All modern bioinformatic approaches to studying HGT look for genes
+		or the regions of the chromosome that have non-optimal codon
+		usage, aberrant GC content (compared to the rest of the genome),
+		or novel functions that are not common to close ancestral
+		neighbors. No studies have looked at aberrant positioning of
+		genes when compared to ancestral neighbors. Can genes
+		'hitch-hike' on transfer events of junk or non-coding DNA or
+		vice versa? 
+	\item Placement of various parS sites to measure the rate of transfer.
+		This can be done at bulk and at single cell level.
+	\item High-throughput methods of microfluidics can help get a better
+		handle of the frequency of locus-specific transfer.
+	\item One could imagine that this may drive the evolution of the genome
+		architecture. Would there be a benefit to be selfish and put
+		beneficial genes next to targets that are likely to be
+		incompatible with horizontal transfer?
+\end{itemize}
 
 \section*{Concluding remarks}
 All of evolution is driven by molecular behavior within the cell. While there has
@@ -339,12 +523,12 @@ been much advancement in both evolutionary and cellular biology, there has been
 remarkably little overlap between them. A multidisciplinary approach using tools
 from evolutionary biology and ecology, the mathematical logic from physics, and
 modern biological techniques holds the potential to advance our understanding of
-the biophysical details of biology’s greatest idea
+the biophysical details of biology's greatest idea
 – evolution. This research will advance our understanding of how DNA migrates
 between bacterial cells and contributes to evolution of their populations. This
 work holds promise for a deeper understanding of the generation of multiple
 antibiotic resistant bacteria. In addition, many important industrial processes
-rely on the faithful propagation of large micro- bial communities (e.g. biofuel
+rely on the faithful propagation of large microbial communities (e.g. biofuel
 production) or the growth of genetically modified organisms. Understanding how
 genetic information flows within communities and between species is important
 for development of novel industrial processes as well as for assessing the risk
@@ -353,6 +537,6 @@ environment. Blah blah other stuff
 
 
 \section*{References}
-\bibliographystyle{abbrv}
-\bibliography{infield}{}
+\bibliographystyle{plainnat}
+\bibliography{../../bib_files/library.bib}
 \end{document}

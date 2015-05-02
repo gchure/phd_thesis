@@ -1,23 +1,164 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{Babic:2008bl}
-A.~Babic, A.~B. Lindner, M.~Vulic, E.~J. Stewart, and M.~Radman.
+\bibitem[Avery et~al.(1943)Avery, Macleod, and McCarty]{Avery:2014wx}
+Oswald~T Avery, Colin~M Macleod, and Maclyn McCarty.
+\newblock {Studies On the Chemical Nature Of the Substance Inducing
+  Transformation of Pneumococcal Types}.
+\newblock \emph{Journal of Experimental Medicine}, pages 1--23, January 1943.
+
+\bibitem[Babic et~al.(2008)Babic, Lindner, Vulic, Stewart, and
+  Radman]{Babic:2008bl}
+A~Babic, A~B Lindner, M~Vulic, E~J Stewart, and M~Radman.
 \newblock {Direct Visualization of Horizontal Gene Transfer}.
-\newblock {\em Science}, 2008.
+\newblock \emph{Science}, 319\penalty0 (5869):\penalty0 1533--1536, March 2008.
+\newblock \doi{10.1126/science.1153498}.
+\newblock URL \url{http://www.sciencemag.org/cgi/doi/10.1126/science.1153498}.
 
-\bibitem{Griffith:1928vg}
-F.~Griffith.
+\bibitem[Burrus and Waldor(2004)]{Burrus:2004ca}
+Vincent Burrus and Matthew~K Waldor.
+\newblock {Shaping bacterial genomes with integrative and conjugative
+  elements}.
+\newblock \emph{Research in Microbiology}, 155\penalty0 (5):\penalty0 376--386,
+  June 2004.
+\newblock \doi{10.1016/j.resmic.2004.01.012}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0923250804000634}.
+
+\bibitem[Chibani-Chennoufi et~al.(2004)Chibani-Chennoufi, Bruttin, Dillmann,
+  and Brussow]{ChibaniChennoufi:2004gv}
+S~Chibani-Chennoufi, A~Bruttin, M~L Dillmann, and H~Brussow.
+\newblock {Phage-Host Interaction: an Ecological Perspective}.
+\newblock \emph{Journal of Bacteriology}, 186\penalty0 (12):\penalty0
+  3677--3686, June 2004.
+\newblock \doi{10.1128/JB.186.12.3677-3686.2004}.
+\newblock URL \url{http://jb.asm.org/cgi/doi/10.1128/JB.186.12.3677-3686.2004}.
+
+\bibitem[Comeau et~al.(2008)Comeau, Hatfull, Krisch, Lindell, Mann, and
+  Prangishvili]{Comeau:2008jo}
+Andr{\'e}~M Comeau, Graham~F Hatfull, Henry~M Krisch, Debbie Lindell,
+  Nicholas~H Mann, and David Prangishvili.
+\newblock {Exploring the prokaryotic virosphere}.
+\newblock \emph{Research in Microbiology}, 159\penalty0 (5):\penalty0 306--313,
+  June 2008.
+\newblock \doi{10.1016/j.resmic.2008.05.001}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S092325080800082X}.
+
+\bibitem[Crick(1968)]{Crick:1968wg}
+Francis~H Crick.
+\newblock {The Origin of the Genetic Code}.
+\newblock \emph{Journal of Molecular Biology}, pages 367--379, August 1968.
+
+\bibitem[Fuentes et~al.(2014)Fuentes, Stegemann, Golczyk, Karcher, and
+  Bock]{Fuentes:2014kr}
+Ignacia Fuentes, Sandra Stegemann, Hieronim Golczyk, Daniel Karcher, and Ralph
+  Bock.
+\newblock {Horizontal genome transfer as an asexual path to the formation of
+  new species}.
+\newblock \emph{Nature}, 511\penalty0 (7508):\penalty0 232--235, July 2014.
+\newblock \doi{10.1038/nature13291}.
+\newblock URL \url{http://dx.doi.org/10.1038/nature13291}.
+
+\bibitem[Grafstein(1983)]{Grafstein:1983wv}
+Daniel Grafstein.
+\newblock {Sterochemical Origins of The Genetic Code}.
+\newblock \emph{Journal of Theoretical Biology}, pages 157--174, June 1983.
+
+\bibitem[Griffith(1928)]{Griffith:1928vg}
+Frederick Griffith.
 \newblock {The Significance of Pneumococcal Types}.
-\newblock {\em Journal of Hygeine}, 1928.
+\newblock \emph{Journal of Hygeine}, pages 1--47, January 1928.
 
-\bibitem{Syvanen:2012jn}
-M.~Syvanen.
+\bibitem[Guglielmini et~al.(2014)Guglielmini, Neron, Abby, Garcillan-Barcia,
+  la~Cruz, and Rocha]{Guglielmini:2014bc}
+J~Guglielmini, B~Neron, S~S Abby, M~P Garcillan-Barcia, F~d la~Cruz, and E~P~C
+  Rocha.
+\newblock {Key components of the eight classes of type IV secretion systems
+  involved in bacterial conjugation or protein secretion}.
+\newblock \emph{Nucleic Acids Research}, 42\penalty0 (9):\penalty0 5715--5727,
+  May 2014.
+\newblock \doi{10.1093/nar/gku194}.
+\newblock URL
+  \url{http://nar.oxfordjournals.org/lookup/doi/10.1093/nar/gku194}.
+
+\bibitem[Lindell et~al.(2004)Lindell, Sullivan, Johnson, Tolonen, Rohwer, and
+  Chisholm]{Anonymous:2004vg}
+Debbie Lindell, Matthew~B Sullivan, Zackary~I Johnson, Andrew~C Tolonen, Forest
+  Rohwer, and Sallie~W Chisholm.
+\newblock {Transfer of photosynthesis genes to and from Prochlorococcus
+  viruses}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, pages 1--6,
+  July 2004.
+
+\bibitem[Mell and Redfield(2014)]{Mell:2014dj}
+J~C Mell and R~J Redfield.
+\newblock {Natural Competence and the Evolution of DNA Uptake Specificity}.
+\newblock \emph{Journal of Bacteriology}, 196\penalty0 (8):\penalty0
+  1471--1483, March 2014.
+\newblock \doi{10.1128/JB.01293-13}.
+\newblock URL \url{http://jb.asm.org/cgi/doi/10.1128/JB.01293-13}.
+
+\bibitem[Oren et~al.(2014)Oren, Smith, Johns, Kaplan~Zeevi, Biran, Ron,
+  Corander, Wang, Alm, and Pupko]{Oren:2014eea}
+Yaara Oren, Mark~B Smith, Nathan~I Johns, Millie Kaplan~Zeevi, Dvora Biran,
+  Eliora~Z Ron, Jukka Corander, Harris~H Wang, Eric~J Alm, and Tal Pupko.
+\newblock {Transfer of noncoding DNA drives regulatory rewiring in bacteria}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 111\penalty0
+  (45):\penalty0 16112--16117, November 2014.
+\newblock \doi{10.1073/pnas.1413272111}.
+\newblock URL \url{http://www.pnas.org/lookup/doi/10.1073/pnas.1413272111}.
+
+\bibitem[Palenik et~al.(2003)Palenik, Brahamsha, Larimer, Land, Hauser, Chaln,
+  Lamerdin, regala, Allen, McCarren, Paulsen, Dufresne, Partensky, Webb, and
+  Waterbury]{Palenik:2003ef}
+B~Palenik, B~Brahamsha, F~W Larimer, M~Land, L~Hauser, P~Chaln, J~Lamerdin,
+  W~regala, E~E Allen, J~McCarren, I~Paulsen, A~Dufresne, F~Partensky, E~A
+  Webb, and J~Waterbury.
+\newblock {The genome of a motile marine \emph{Synechococcus}}.
+\newblock \emph{Nature}, 424\penalty0 (6952):\penalty0 1035--1037, August 2003.
+\newblock \doi{10.1038/nature01883}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/nature01883}.
+
+\bibitem[Sinha and Redfield(2012)]{Sinha:2012eh}
+Sunita Sinha and Rosemary~J Redfield.
+\newblock {Natural DNA Uptake by Escherichia coli}.
+\newblock \emph{PLoS ONE}, 7\penalty0 (4):\penalty0 e35620, April 2012.
+\newblock \doi{10.1371/journal.pone.0035620}.
+\newblock URL \url{http://dx.plos.org/10.1371/journal.pone.0035620}.
+
+\bibitem[Syvanen(1985)]{Syvanen:1985vv}
+Michael Syvanen.
+\newblock {Cross-species Gen Trnasfer; Implications for a New Theory of
+  Evolution}.
+\newblock \emph{Journal of Theoretical Biology}, 112:\penalty0 333--343,
+  January 1985.
+
+\bibitem[Syvanen(2012)]{Syvanen:2012jn}
+Michael Syvanen.
 \newblock {Evolutionary Implications of Horizontal Gene Transfer}.
-\newblock {\em Annual Review of Genetics}, 2012.
+\newblock \emph{Annual Review of Genetics}, 46\penalty0 (1):\penalty0 341--358,
+  December 2012.
+\newblock \doi{10.1146/annurev-genet-110711-155529}.
+\newblock URL
+  \url{http://www.annualreviews.org/doi/abs/10.1146/annurev-genet-110711-155529}.
 
-\bibitem{Tatum:1947va}
-E.~L. Tatum and J.~Lederberg.
+\bibitem[Tatum and Lederberg(1947)]{Tatum:1947va}
+E~L Tatum and Joshua Lederberg.
 \newblock {Gene recombination in the bacterium \emph{Escherichia coli}}.
-\newblock {\em Journal of Bacteriology}, 1947.
+\newblock \emph{Journal of Bacteriology}, October 1947.
+\newblock URL
+  \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC518375/pdf/jbacter00658-0015.pdf}.
+
+\bibitem[Vestigian et~al.(2006)Vestigian, Woese, and
+  Goldenfeld]{Vestigian:2006va}
+Kalin Vestigian, Carl Woese, and Nigel Goldenfeld.
+\newblock {Collective evolution and the genetic code}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, pages
+  10696--10701, June 2006.
 
 \end{thebibliography}
