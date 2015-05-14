@@ -1,22 +1,31 @@
-%%%%%%%%%%%%Preamble%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[letterpaper, 12pt]{article}                 %
-\usepackage[margin=1in]{geometry} 	                   %
-\usepackage{microtype}                                     %
-\usepackage{amsmath}                                       %
-\usepackage{graphicx}                                      %
-\usepackage{xcolor}                                        %
-\usepackage{verbatim}                                      %
-\usepackage{fancyhdr}                                      %
-\usepackage{setspace}                                      %
-\pagestyle{fancy} 				           %
-	\rhead{Griffin Chure} 				   %
-	\lhead{INSERT SECTION TITLE}
-\onehalfspacing                                            %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Preamble%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper, 12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor} 
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[font=footnotesize,labelfont=bf, skip=0pt]{caption}
+\usepackage{epstopdf}
+\usepackage{wrapfig}
+\pagestyle{fancy}
+	\rhead{Griffin Chure}
+	\lhead{\rightmark}  
+\setlength\parindent{0pt} %remove indent.
+\onehalfspacing
 
-%%%%%%%%%%%%%Bibliography Bullshit%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%Bibliography Bullshit%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[comma, numbers]{natbib} %Sets bib dependency using natbib/bibtex
  \setlength{\bibsep}{0.0pt} %Reduces spacing between bibliography
  \renewcommand*{\bibsection}{} %Removes bibliography title.
  \renewcommand*{\bibfont}{\footnotesize} %Makes bib fontsize smaller.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcitestyle{square} %Square bracket citations.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
