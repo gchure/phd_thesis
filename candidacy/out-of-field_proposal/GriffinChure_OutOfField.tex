@@ -1,42 +1,553 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{../../tex_tools/candidacy_preamble.tex}
-
+\rhead{Original Research Proposal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%TITLE INFORMATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Interkingdom Signaling in the Symbiosome}
-\author{Griffin Chure -- Out-of-Field Research Proposal\\
+\title{From Free-Living to Endosymbiont: Transcriptional Analysis of
+	\textit{Rhizobium} Differentiation 
+in Legume Root Nodule Development}
+\author{Griffin Chure -- Original Research Proposal -- Rob Phillips Group\\
 	\small \textit{California Institute of Technology - Biochemistry and
 	Molecular Biophysics}}
-\date{\small Draft -- \today}
-
+\date{\today}
 %%%%%%%%%%%%%%%%DOCUMENT%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
 \maketitle
 
-\abstract{Many species of plants rely on the metabolic action of soil microbiota
+\abstract{All plants rely on the metabolic action of soil microbes
 to convert atmospheric dinitrogen into fixed ammonia. In return, some species of
-plants, especially the legumes, house these microbes in complicated structures
+plants (primarily legumes) house these microbes in complicated structures
 known as root nodules. Within the root nodules, specific species of bacteria are
 internalized into the legume cytoplasm and form stable pseudo-organelles known
-as the symbiosome. Both plant and bacterial proteins are found within the
-symbiosome membrane suggesting extensive communication between the microbes and
-the plant cell. XXXXXXXXX Something about methods XXXXXXX}
+as symbiosomes. The development of root nodules relies on extensive
+communication between the nitrogen fixing microbe and the plant root cells to
+safely and efficiently form these dynamic metabolic structures. This
+communication between domains of life results in a large amount of
+transcriptional rearrangements in the root tissues of the plant and has been
+well studied through genetic and sequencing methods.  The extent of
+transcriptional reprogramming in the infecting microbe, however, is unknown.
+Through RNA-sequencing, transcriptomics, and genetic assays, this research will
+reveal how the transcription profile of the symbiotic nitrogen-fixing bacterium
+\textit{Rhizobium} changes over the course of infection and symbiosome
+differentiation. This will be performed in determinate and indeterminate nodule
+forming legumes (\textit{Lotus japonicus} and \textit{Medicago truncatula}
+respectively), providing insight on microbial reactions to differentiation
+signals from the host plant cell.} 
+
+\section*{Introduction} 
+Second only to photosynthesis, nitrogen fixation is the most important
+biological process on the planet. All forms of life require nitrogen to survive.
+However, the machinery necessary for the energetically expensive conversion of
+molecular nitrogen into a biologically active ammonia, is limited to a subset of
+soil and marine dwelling microbes (diazotrophs). Although unable to fix nitrogen
+directly, legumes (such as the pea, lentil, and clover) have evolved a symbiotic
+relationship with the surrounding soil diazotrophs to form
+nitrogen-fixing root nodules. The importance of legumes (and crop rotation in
+general) to soil fertility has been known for most of human history and its role
+in the nitrogen cycle has been the subject of extensive study for the past 150
+years (reviewed in \citet{Hirsch:2009to}). The identity  of the
+"bumps" growing along the roots of leguminous plants were described in the late
+17th century and were believed to be due to parasitic insect activity, serving
+no important function to the plant. Although it took over two centuries, 
+Hellriegel and Wilfarth \cite{Hellriegel:1888ug} proved that the legume root nodules were
+directly responsible for fixing dinitrogen into a biologically accessible form.
+Furthermore, they were able to show that this process was not due to the plant
+cells directly, but was a product of some other organism living within the
+nodules. A little over a decade later, Martinus Beijerinck was able to
+isolate and classify the nitrogen-fixing nodule dwellers as bacterial members of
+the genus \textit{Rhizobium} \cite{Beijerinck:1901wz}.  
+
+In the century and half after its discovery, we have learned much about the
+evolution, ecology, development, and biochemistry of this fascinating
+symbiosis between different domains of life (described below). While found among
+many species of legumes, nodules typically take one of two forms. Determinate
+nodules halt meristematic activity, meaning that lateral growth is halted. Root
+cells of the cortex begin to grow and expand in size, resulting in a spherical
+nodule.  Indeterminate nodules retain meristematic activity and can continue to
+grow laterally into the soil sometimes forming large, branched structures. The
+continued growth results in non-homogeneous nitrogen fixation along the length
+of the developing root nodule \cite{Crespi:2000dw} caused by continual infection
+by new nitrogen-fixing microbes and senescence of old symbiosomes. While the
+large-scale morphological differences between the two nodule modalities are
+striking, the basic architecture of the symbiotic interface is relatively
+similar, although there are differences in the regulation of bacterial growth
+within the nodule between determinate and indeterminate types. 
+
+The functional symbiotic relationship forms upon entry of the nitrogen-fixing
+bacterium within a plant-derived plasma membrane vesicle into the cytosol of the
+plant root cell. The formation of this structure, known as the symbiosome,
+involves drastic changes in morphology and cell differentiation for both the
+plant and bacterial cells requiring mechanisms of inter-domain signaling. The
+molecular events within the nodulating root cells have been extensively studied
+and are fairly well understood. However, our knowledge of their relationship to
+differentiation of the free-living bacterium to a nitrogen-fixing endosymbiont
+is extremely limited. Through RNA sequencing of the infecting bacteria throughout nodule
+development coupled with targeted  mutagenesis, I aim to examine the extent and
+timing of development the bacterium undergoes on its journey to an endosymbiont.
+The following sections provide an overview of the infection process of
+free-living bacteria and development into a functional symbiosome as well as a
+suite of experiments which may reveal previously
+unidentified plant-microbe signaling events.
+
+\subsection*{Development of the symbiosome} 
+\indent The formation of nitrogen-fixing root nodules is a two-step developmental
+process requiring organogenesis in the legume root and infection by a
+nitrogen-fixing bacterium (an overview is given in Fig. \ref{fig:overview}). While each 
+process can be induced genetically,  the two must occur at the same
+position and time in order for a functional root nodule to develop
+\cite{Oldroyd:2008hd}.  These processes are highly coordinated between the
+nitrogen-fixing bacteria and the root epidermal cells, requiring extensive
+communication and transcriptional rewiring. In general, plants exude an
+impressive amount of small molecules and proteins into the soil which support
+the surrounding microbial communities,
+known as the rhizosphere \cite{Perret:2000ue}. By providing radio-labeled
+$^{14}$CO$_2$, \citet{Helal:1988tq} were able to show that an astounding 19\% of
+the photosynthetically fixed carbon was released back into the soil. Chemical
+analysis of this secreted material (exudate) revealed the presence of 
+polysaccharides, antimicrobial agents, and a diverse array of
+flavanoids. From a symbiotic perspective, flavanoids are the most
+important constituents of the exudate. They are recognized by nearby bacteria
+and serve as a chemoattractant \cite{Zuanazzi:1998vk, Hirsch:1992vo} driving
+navigation of the bacteria to the nitrogen-starved roots. In
+addition, their reception  
+stimulates the synthesis and secretion of complex
+polysaccharide-decorated lipids known as nodulation factors (NF) from
+the microbes which are critical to initiate symbiosis. The type of flavanoid
+and decorations of the NF play important roles in species specificity of the
+symbiosis \cite{Perret:2000ue, Oldroyd:2011ej, Denarie:1996ts} and are suspected
+to have evolved from an early symbiotic relationship between plants and
+mycorrhizal fungi \cite{Parniske:2008jx}.
+
+Recognition of the NF by transmembrane receptors on the surface of
+the root epidermis sparks a calcium-dependent signaling cascade which penetrates
+into the center of the root called the cortex (reviewed in
+\citet{Oldroyd:2004dv, Oldroyd:2008hd}). The identity of this diffusible signal
+remains unknown, however many other components of this signaling cascade have
+been identified. The NF is sufficient for
+nodule formation as application of the NF in the absence of rhizobia stimulates
+organogenesis, although the resulting nodule will be incapable of nitrogen
+fixation \cite{Truchet:1991tu}. 
+
+For a fully-functional nodule to develop, the nitrogen-fixing bacteria 
+must penetrate the root epidermis and ultimately invade the cells of the cortex.
+As plant cells are protected by hydrophobic plasma membranes and a rigid
+cellulose cell wall, there must be a large mechanical disruption of the root
+epidermal cells. Nitrogen-fixing bacteria have been shown to enter the root
+cortex through cracks in the epidermis, by slipping into the interstitial space
+between adjacent epidermal cells, or (most commonly) through invaginations
+within the root hairs -- tubular extensions of root epidermal cells that cover the
+root
+epidermis \cite{Oldroyd:2011ej, Gage:2004ee, Grierson:2002jf}. Upon the
+recognition of NF via receptors that decorate root hair surface, a
+large cytoskeletal rearrangement occurs causing the root hair to curl and fold upon
+itself. The surrounding bacteria become trapped within this fold
+forming what is known as an infection pocket \cite{Geurts:2005jx}. The trapped
+microbes continue to divide in this pocket, forming small colonies known as
+infection foci. However, continued division is not sufficient for
+progressive infection into the root cortex. It is likely that a release of
+cell-wall degrading enzymes from both the microbes of the infection foci and the
+root epidermal cells themselves weaken the cell wall surrounding the infection
+foci and
+promote invagination of the plasma membrane and cell wall into a structure known as the
+infection tube \cite{Ridge:1985wo}. Delivery of membrane vesicles to the tip of
+the infection tube allows continued invagination through the epidermal cells
+towards the root cortex. The
+infection tube grows with an impressively high degree of directionality,
+navigating its way to the next
+layer of cells ultimately penetrating into the root cortex. This directionality
+is achieved by a direct connection of the nucleus to the tip of the infection tube
+via cytoskeletal fibers, most likely actin filaments
+\cite{MonahanGiovanelli:2006ki}. Movement of the nucleus along actin
+cables pulls the growing infection tube towards the adjacent root cortex cells.
+Once the tip of the infection tube approaches the medial wall of the root hair
+cell, the nucleus of the adjacent cell aligns itself with the incoming infection
+tube and continues the direction to
+the next cell \cite{Gage:2004ee}. This process is repeated with the infection
+tube periodically branching, infecting a large number of root cortical cells.
+The amount of inter-cellular signaling to accommodate the passage of the
+infection tube into the root cortex is astounding and many of the signaling
+partners are unknown \cite{Oldroyd:2011ej}.
+
+\begin{figure}
+	\centerline{\includegraphics[width=\textwidth]{figs/nodule_overview.eps}}
+	\caption{Microbial infection and nodule formation. The top panel
+	overviews the major events in which bacteria infect root epithelium and
+form symbiosome within nodules. Plant cells have been omitted for clarity. Blue
+and red dots represent plant-secreted flavanoids and bacterium-secreted
+nodulation factors (NF) respectively. The bottom panel shows representative
+images of \textit{L. japonicus} determinate nodules (image courtesy of
+\texttt{seedquest.com}), root hair and infection thread labeled with red and green
+respectively (image adapted from \citet{Meckfessel:2012df}), and \textit{L. japonicus}
+symbiosomes containing bacteroids (image adapted from
+\citet{VandeVelde:2010cn}).}
+\label{fig:overview}
+\end{figure}
+
+As the infection tube continues invagination, the bacteria of the infection foci
+continue to divide, forcing themselves into the cavity of the infection
+tube forming an infection thread. While these microbes are still topologically
+outside of the plant cells, they must combat a large array of metabolic stresses.
+It has been shown that  within the infection thread, 
+\textit{Sinorhizobium meliloti} induces a suite of catalase genes typically
+activated by oxidative stress \cite{Jamet:2003us}. Mutation of these genes
+resulted in poor nodulation and aberrant infection physiology, suggesting that
+oxidative stress is experienced during the entire infection process. Many plants
+synthesize and secrete a variety of antimicrobial agents into the soil, such as dicholorethane and
+phytoalexins. This process is important in preventing parasitism
+of the root, but continues even during infection thread progression
+\cite{Karr:1992uk} serving as another hurdle which the invading bacteria must overcome.
+Some symbiotic species express various resistance cassettes specific to these
+anitimicrobial agents in the free-living state and likely in the infection
+thread \cite{Ramachandran:2011iq}. While these serve as specific examples, the
+infecting bacteria face other adverse conditions within in the infection thread
+microenvironment, allowing the legume to select for the most competitive
+symbiotes. 
 
 
+Once the infection thread reaches the inner cortical cells of the legume root,
+the progression of the infection tube ceases. However, the cells within the
+infection thread continue to proliferate until they are released into the
+cytosol of the root cortical cell within an infection tube vesicle. This
+plant-derived vesicle containing one to several bacteria forms the
+symbiosome pseudo-organelle \cite{Oldroyd:2011ej}. At this stage, numerous plant
+proteins are targeted to the symbiosomal membrane (SM) initiating
+differentiation of the bacterium into a nitrogen-fixing form named the bacteroid.  
+Symbiosomes of determinate nodule forming legumes, such as \textit{Lotus japonicus}, 
+often contain two or more bacteroids similar in size to their
+free-living counter parts. In general, the determinate-nodule bacteroid cell
+cycle is unperturbed, and division continues uninhibited. This means that the
+cortical cell can be packed with thousands of symbiosomes each containing a
+handful of bacteroids \cite{Ott:2009vx}. In stark contrast, 
+indeterminate nodule forming legumes, such as \textit{Medicago truncatula},
+explicitly control the bacteroid life cycle resulting in the symbiosome 
+behaving more similarly to a cellular organelle. Bacteroids in these legumes
+appear to be larger and swollen when compared to their free-living state 
+\cite{Oono:2010hg} and have compromised membranes \cite{Mergaert:2006wi}. \textit{M. truncatula} produces a large abundance of
+cysteine-rich small peptides which control terminal
+differentiation of bacteroids and halt cell division \cite{VandeVelde:2010cn,
+Farkas:2014dv}. Furthermore, these bacteroids are forced into endoreduplication
+where the chromosome is replicated to 24 copies, more than double the mean copy
+number in free living rhizobia \cite{Mergaert:2006wi}.
 
-\section*{Introduction}
-\subsection*{The need for symbiosis}
-\subsection*{Development of the symbiosome}
-\subsection*{Anatomy of the symbiosome}
-\subsection*{Proteins of the symbiosome membrane}
-\subsection*{Metabolic role of the symbiosomal space}
+This gives an overview of invasion and differentiation of free-living rhizobia to
+differentiated, nitrogen-fixing bacteroids within plant symbiosome. Many studies
+regarding the plant hormone involvement for organogenesis of nodule tissue
+(reviewed in \citet{Oldroyd:2004dv} and \citet{Ryu:2012dt}) have focused
+primarily on the interactions between the root cells and the bacterial
+symbionts. The plant hormone signaling pathways and consequences directing
+nodule organogenesis have been studied extensively and are relatively well
+understood. However, there is still much to be learned about the interactions
+between the rhizobia and the root cells at all stages of development.  
 
-\section*{Experimental approach}
-\subsection*{The role of Ca$^{2+}$ sensing and signaling in the symbiosomal space}
-\subsection*{DNA content of the symbiosomal space}
-\subsection*{Marking the destruction of the symbiosome.}
+\subsection*{Symbiosome maintenance}
+Once differentiated, the bacteroids rely entirely on the host
+cell for all nutrients necessary for nitrogen fixation and survival. To
+complicate matters, the semi-permeable SM prevents the free diffusion of
+material to the bacteroid making transport machinery within the SM a necessity
+\cite{Smith:2014jg}. Upon release from the infection thread, proliferation of
+the bacteroids requires rapid expansion of the SM, requiring the
+synthesis and targeting of lipids and proteins to the SM \cite{Smith:2014jg}. In
+the completely differentiated state, the surface area of the SM can reach 100
+fold that of the plasma membrane \cite{Roth:1989vz}. Proteomic analysis of
+proteins associated with the SM revealed a common N-terminal signal sequence
+\cite{Meckfessel:2012df, Hohnjec:2009uk} suggesting the existence of a
+symbiosome-specific trafficking pathway. The molecular details of this transport
+pathway remain unknown, however it is likely that other transport pathways exist as
+proteins lacking the N-terminal signal sequence are still successfully targeted
+to the symbiosome \cite{Catalano:2004du}.  For protein targeting and transport
+at the SM to be completely understood, more work is needed to identify and
+characterize the symbiosome-specific secretion pathway(s). The protein content
+of the SM varies over the symbiosome life cycle to accommodate the changing
+metabolic requirements of the bacteroid \cite{Whitehead:1997wu}. This strongly
+suggests a level of communication between the bacteroid and the plant cell
+directly. What these signals are or how they are received by the plant nucleus
+is still entirely unknown and warrants further investigation.  
 
-	\section*{Concluding Remarks.}
+The reduction of N$_2$ is an expensive endeavor
+requiring large amounts of ATP \cite{Halbleib:2000tx}. It is unsurprising that
+the primary nutrient transported across the SM is fixed carbon produced via
+photosynthesis in the leaves and transported to roots through the phloem.
+Biochemical assays with purified and metabolically active symbiosomes revealed
+a putative transporter of succinate and malate \cite{Udvardi:1988wm} however,
+even 26 years after its discovery, the identity of this transporter has not been elucidated.
+The other major protein constituents of the SM are ammonium
+transporters. The product of bacteroid nitrogen fixation is NH$_3$, which is
+secreted out of the cell into the symbiosomal space (SS) where it is protonated
+to NH$_4^+$ and transported into the cortical cytoplasm. To ensure that the
+fixed nitrogen is not squandered and used by the bacteroid, the host plant cell
+represses the ammonium uptake machinery during differentiation 
+into a bacteroid \cite{Howitt:1986wq}. As in the case of the malate/succinate
+transporter, the precise identity of the ammonium transporter is still unknown,
+although some biochemical and mutational studies suggest that NOD26, an
+aquaporin, is the likely culprit \cite{Hwang:2010cs}.
+
+While there has been much work characterizing the role of the SM, there has been
+little interest the function of the SS. Proteins and small molecules produced by
+both the plant cell and the bacteroid populate this volume creating a unique
+opportunity for cooperation between domains of life at the protein level
+\cite{Simonsen:1999hj}. Proteomic analysis of the SS revealed that the
+population of non-metabolic/maintenance proteins is large relative to metabolic
+enzymes suggesting that the SS may serve a role beyond carbon/nitrogen
+transport. Many of the same proteins have been found in numerous proteomic studies in a
+variety of legume-\textit{Rhizobium} symbioses (reviewed in \citet{Emerich:2014fo}).
+Unfortunately, these studies do not reveal the connections between these
+components. A more detailed biochemical characterization is needed to reveal any
+hidden functions of the SS.
+
+The transition from root cells and free-living bacteria to a fully-developed
+nodule requires drastic genetic and morphological reorganization for both
+parties. Even when differentiation is complete, cooperation between the plant
+cell and the bacteroid is needed to ensure that the symbiosome successfully
+converts dinitrogen into a physiologically relevant form. As described previously,
+many of the genetic details of development in the plant cells has been
+determined, characterized, and manipulated, but much remains unknown regarding
+the regulatory rewiring of the bacteria in transition to the bacteroid symbiont.
+
+
+\section*{Experimental approach} 
+\subsection*{Profiling the \textit{Rhizobium} transcriptome throughout nodulation}
+Many studies have used high-throughput methods to
+analyze transcriptional reprogramming in nodulating plant tissues and between
+free-living and differentiated bacteroids \cite{Cabeza:2014ht, Peng:2014dz,
+Moreau:2011en, Breakspear:2015ek, Becker:2004ts}. However, there have been no
+studies examining the transcriptome of the infecting microbes over the
+development of the root nodule, leaving the dynamics or intermediate states of
+development uncharacterized. The initiation of infection via release of
+cell-wall degrading enzymes, the progression of the infection thread deep
+into the root tissue, and the release of plasma-membrane wrapped bacteria into
+root cortical cells suggests that signaling does not occur only within the plant
+cells. Understanding how bacterial gene expression changes over
+time will shed light on the complete process of bacteroid differentiation.
+
+Most transcriptomics are performed either by microarray analysis
+\cite{Rensink:2005da, Guttikonda:2010hq} or RNA sequencing (RNA-seq) \cite{Martin:2013hg,
+Wang:2009di}. Briefly, in a microarray analysis the RNA of interest is isolated
+reverse-transcribed into cDNA fragments. The cDNA fragments are subsequently
+labeled with specific fluorophores and are washed over a microfluidic chip on
+which oligonucleotides corresponding to the organism of interest are conjugated
+in a known pattern. The chip with bound cDNA is then imaged and analyzed as regions of
+fluorescence correspond to conjugated oligonucleotides hybridized with the
+fluorescently labeled cDNA, indicating gene expression. By comparing different
+expression samples, one can make measurements of transcript abundance relative
+to a standard. In contrast, RNA-seq operates via shotgun-sequencing of the
+reverse transcription-generated cDNA rather than hybridization. RNA-seq has many
+advantages over traditional microarray analysis as it allows absolute determination of
+gene transcription, is not limited to known transcripts, and reduces
+signal-to-noise as the resulting cDNA is sequenced and cross-hybridization to
+unrelated probes is not a concern. RNA-seq has been
+popular in analyzing eukaryotic samples as all eukaryotic RNA contains a polyA
+tail, making the design of sequencing probes trivial. Prokaryotic RNAs, however,
+lack such a barcode, making the sequencing library generation more difficult.
+The recent development of differential RNA-seq solves this issue by ligating
+polyA RNA barcodes onto partially fragmented purified RNA, allowing the use of
+standard sequencing probes \cite{Creecy:2015bk, Sharma:2014ed}.
+
+Using RNA-seq, I propose to monitor the transcriptional reprogramming of
+\textit{Rhizobium} sp. NGR234 (hereinafter referred to as \textit{Rhizobium}) from
+the soil-dwelling state, through the early stages of nodule development, and
+differentiation into functional bacteroids in both determinate and indeterminate
+legumes. \textit{Rhizobium} is a fast-growing nitrogen-fixing bacterium capable
+of infecting and forming functional symbiosomes in more than 110 genera of
+legumes, including determinate and indeterminate nodulating species
+\cite{Hussain:2005vu}, making it an attractive bacterium for studying the
+developmental differences between them. In addition, the full genome sequence is known
+\cite{Schmeisser:2009cp} allowing for a detailed analysis of expression
+profiles.  
+
+The experimental procedure is outlined in Fig. \ref{fig:experimental_procedure}. 
+Methods for the cultivation and observation of nodule-forming legumes are widely
+available and well described in the literature \cite{Journet:2006ws,
+Sasaki:2013wj, Diaz:2005ud}. Briefly, the determinate and indeterminate model
+legumes \textit{Lotus japonicus} and \textit{Medicago truncatula} respectively
+will be grown in soil lacking \textit{Rhizobium} but rich in nitrogen for 1 -
+3 weeks. Well-developed seedlings will then be moved to nitrogen depleted soil
+for several days leaving the plants starved of nitrogen and primed for
+nodulation. The seedling will then be inoculated with freshly grown
+\textit{Rhizobium} liquid culture and placed into a paper/plastic growth pouch
+(described in \citet{Journet:2006ws}) where root nodule development can be
+monitored directly through a plastic viewing screen. The nodulation process from
+liquid culture inoculation is rapid with infection threads forming within the
+first 24 - 36 hours post inoculation and immature nodules visible within 48
+hours post inoculation. Previous \textit{Rhizobium} transcriptional analyses
+have only compared the transcriptome of the free-living rhizobium with that of
+fully developed nodules (10 - 20 days post inoculation). In this study, I propose to
+monitor the bacterial development of nodules over many stages of development
+sampling numerous nodule from many individual plants every 24 - 36 hours.
+Many seedlings will be inoculated at the same time allowing for the formation of
+many nodules on similar time scales.
+
+Several protocols exist for the isolation of symbiosomes and bacteroids from
+developing and functional nodules \cite{Wienkoop:2005wu, Kazandjian:2008vu,
+Panter:2000wj} along with multiple strategies for the isolation of bacterial RNA
+from mixed environmental samples \cite{Wang:2012gj, Stark:2014ea} . Briefly,
+after sampling 2 - 10 grams of nodules at each time point, the nodule exterior is
+sterilized and flash-frozen with liquid nitrogen. Mechanical disruption via
+mortar and pestle breaks apart the plant cells while releasing intact bacteria
+and bacteroids which are then purified using differential centrifugation. The
+bacteroid is then lysed and the RNA can be isolated using proprietary commercial kits or more
+carefully via chemical methods \cite{Sessitsch:2002vq} where it is then
+subjected to differential RNA-seq (described above). The returned sequences can
+then be mapped to the reference \textit{Rhizobium} genome and a full
+transcriptome can be produced.
+
+\begin{figure}
+	\centerline{\includegraphics{figs/experimental_procedure.eps}}
+	\caption{Experimental outline for nodule transcriptomics. Seedlings
+		grown in nitrogen-rich soil are isolated and transferred to
+		nitrogen depleted soil priming the roots for nodulation. Liquid
+		culture of \textit{Rhizobium} is added to the roots and soil and
+		is monitored nodule development. For several days post
+		inoculation (dpi), nodule growth is monitored and periodically
+		sampled (red circles) from multiple plants (not shown). Root nodules are then
+		frozen in liquid nitrogen and mechanically disrupted using a
+		mortar and pestle (described in \cite{Vercruysse:2010ji}).
+		Bacterial RNA is then purified and reverse transcribed to cDNA
+		and barcoded with known sequences. cDNA fragments are then
+		sequenced and mapped to the known genomic sequence for
+		transcriptome analysis.} 
+\label{fig:experimental_procedure}
+\end{figure}
+
+\subsection*{Revealing unknown regulatory behavior }
+\indent The total number of \textit{Rhizobium} cells occupying the nodule increases as
+the infection process progresses. As nodules sampled later in development will
+contain more bacteria, it is important to quantify the RNA abundance with
+respect to a standard which does not change over the course of development.
+Genes imperative to survival, such as 16S rRNA, serve as attractive candidates
+for an internal reference. After sequencing the extracted bacteroid
+RNA, the relative abundance of each gene can be calculated and compared to the
+expression of their free-living counterparts (Fig. \ref{fig:fake_data}). This
+will allow identification of large-scale changes in RNA abundance. However,
+abundance differences in low-copy number RNAs are more difficult to identify as the impact
+of stochastic variation in expression is greater than in high-copy number cases.
+As the \textit{Rhizobium} sequence is known and well-annotated, the specific
+identity of each over- or underexpressed gene can be identified, providing
+insight into how the bacterial symbiont progresses from free-living
+\textit{Rhizobium} to  nitrogen-fixing bacteroid.
+
+\begin{figure}
+	\centerline{\includegraphics{figs/copy_number_comparison.eps}}
+	\caption{Hypothetical data for \textit{Rhizobium} RNA abundance differences over the course of
+		nodule development. RNA abundance is computed relative to an RNA
+		standard that does not vary over bacteroid development (such as
+		16S rRNA) and plotted as a function of RNA abundance of the
+		free-living \textit{Rhizobium}.  Arrows indicate examples of
+		upregulated and downregulated genes over the course of
+		development. Black line represents perfect agreement with the
+		free-living expression pattern.
+		Stochastic variation in abundance of genes with low expression makes
+		determination of statistically significant changes more difficult.}
+ \label{fig:fake_data}
+\end{figure}
+As described in the introduction, the signaling pathways
+and transcriptional networks of nodule organogenesis within the plant cells has
+been well studied over the past two decades \cite{Oldroyd:2004dv,
+Soyano:2014ic}. With this developmental road map, I will be able to compare
+changes in bacterial transcription with the molecular events occurring in the
+surrounding plant cells to identify putative signaling relationships.
+\textit{L. japonicus}, \textit{M. truncatula}, and \textit{Rhizobium} are all
+model organisms whose genomes have been sequenced and are easily manipulated
+with standard genetic tools. With the transcriptome information in hand, it will
+be possible to compare coordinated changes in expression between the bacterium and
+root cells to reveal previously undiscovered signaling events.
+
+
+With this picture of the transcriptional
+dynamics of the whole genome, it will be possible to monitor the
+activation and/or repression of specific genes known to be important for the
+formation of functional nodules.  For example, \textit{Rhizobium} mutants
+deficient in nitrogen fixation can still form morphologically normal bacteroids,
+although the nodule is not functional \cite{Hirsch:1987ux, Lang:2015wt}. This is
+surprising as one would expect the nodulating plant to enter symbiosis only with
+bacterial candidates capable of fixation. On the other hand, there are some
+small mutations which appear to have great power in directing nodulation.
+\textit{BacA}, a non-essential integral membrane protein involved in
+peptidoglycan biosynthesis, was shown to be necessary for \textit{Rhizobium} to
+infect some, but not all legumes \cite{Karunakaran:2010gr}. Those which the
+$\Delta$\textit{bacA} mutants successfully infected developed 
+functional nodules, suggesting that its presence is important for the infection
+initiation in some legume species. By monitoring the expression of genes with
+known importance over time, their role in nodule development may become more
+obvious.  Of particular interest is the expression profile of the nitrogen
+fixing (\textit{nif}) genes as it is still unknown at what point transcription
+begins.  Nitrogenase is irreversibly inactivated by the presence of molecular
+oxygen \cite{Gallon:1981uq} and its synthesis is repressed in free-living
+\textit{Rhizobium} \cite{Merrick:1995tf}.  At what stage in symbiosome formation
+is nitrogenase active? Furthermore, are there any plant-derived signals that
+govern its regulation? 
+
+\subsection*{Targeted mutagenesis to characterize developmental stages}
+\indent Random mutagenesis screens and transposon insertions have served as an
+incredibly fruitful strategy to dissect the information transduction pathways
+which dictate organismal development \cite{Sikora:2011fk, Flibotte:2010fc}. Such
+strategies have been applied to a number of model legumes and, in conjunction
+with transcriptomics, have helped reveal the large number of players that
+coordinate to generate nitrogen-fixing nodules as well as many of their
+interactions. There has been work on the random mutagenesis of the bacterial
+symbionts, but the conclusions regarding bacteroid development have been limited
+and less complete. 
+
+Using the expression profiles generated from the above experiments, I propose to
+use site-directed mutagenesis  (coupled with modern microscopy techniques and
+acetylene reduction assays to quantify nitrogen fixation \cite{Vessey:1994vc}) on a
+myriad of up and downregulated \textit{Rhizobium} genes at various stages of
+development that may trap the developmental state and provide insight into the
+involvement of the bacterium on overall nodule morphology and function (Fig.
+\ref{fig:microscopy}). There has been evidence that occasionally, seemingly
+innocuous mutations in the bacterial symbiont can dramatically alter nodule
+morphology. \textit{Rhizobium} mutants unable to synthesize the tryptophan
+precursor molecule anthranallic acid demonstrate extended infection threads and
+elongated, defective nodules \cite{Barsomian:1991uc}, a phenotype that could not
+be predicted \textit{a priori}. There are many other examples of surprising
+nodule phenotypes caused by mutations in the bacterial symbiont although many of
+the specific function of the mutated genes in terms of symbiosis remain unknown.
+Having the knowledge of when specific genes are
+turned on and off will allow for a much more careful analysis of the interplay
+between changes in the bacterium and maturation of the root nodule.
+
+\begin{figure}[!h]
+	\centerline{\includegraphics{figs/microscopy.eps}}
+	\caption{Trapping developmental states through targeted mutagenesis of
+		\textit{Rhizobium}. The top panel provides an overview of the
+		experimental procedure. The gene expression profile of
+		\textit{Rhizobium} at a specific time point shows the relative
+		up/downregulation of a suite of genes. Mutations altering these
+		genes (either in regulation or in function) are generated and cloned
+		into \textit{Rhizobium} which are then used to inoculate
+		nitrogen-starved seedlings. The morphological changes in nodule
+		development (if development occurs) is assessed through
+		microscopy. Bottom panel: morphological aberrations in root-hair
+		infection of a \textit{dmi2-1} \textit{M.  truncatula} mutant.
+		This panel displays the use of mutagenesis and microscopy to
+		characterize a nodulation-deficient phenotype.  Images D and E
+		show WT infection by \textit{Rhizobium}-GFP while F shows failed
+		infection of the \textit{dmi2-1} mutant. Scale bars represent 15
+		\textmu m.  Images adapted from \citet{Esseling:2004ja}.} 
+	\label{fig:microscopy}	
+
+\end{figure}
+\newpage
+\section*{Concluding Remarks} 
+As no eukaryotic organism encodes the ability to fix nitrogen in its genome,
+the entire biosphere relies on the perpetuation of the handful of microbial species
+who do. Approximately 200 $\times 10^6$ tons of nitrogen is fixed per year through
+biological processes, 20\% of which is due to legume root nodules alone
+\cite{Brady:2008vg}. While the organogenesis and function of the legume root
+nodule has been the focus of extensive study for nearly 200 years, there is
+still much to be understood regarding the extent and mechanisms of communication
+between the nitrogen-fixing bacterium and the plant host. The research described
+above will help shed light on the developmental changes within bacterial
+symbiont that allows the transition from free-living to nitrogen-fixing and
+completely dependent. Furthermore, these findings will advance our understanding
+on the formation and stabilization of bacterial-eukaryotic symbiotic
+relationships in general.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{References}
-\bibliographystyle{abbrv}
+\bibliographystyle{unsrtnat}
 \bibliography{../../bib_files/library.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}

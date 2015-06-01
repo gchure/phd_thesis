@@ -1,0 +1,517 @@
+\begin{thebibliography}{75}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hirsch(2009)]{Hirsch:2009to}
+Ann~M Hirsch.
+\newblock \emph{{Brief history of the discovery of nitrogen-fixing organisms}}.
+\newblock 2009.
+
+\bibitem[Hellriegel and Wilfarth(1888)]{Hellriegel:1888ug}
+Hermann Hellriegel and Hermann Wilfarth.
+\newblock {Untersuchungen {\"u}ber die stickstoffnahrung der gramineen and
+  leguminosen}.
+\newblock \emph{Buchdruckerei der Post Kayssler}, 1888.
+
+\bibitem[Beijerinck(1901)]{Beijerinck:1901wz}
+Martinus Beijerinck.
+\newblock {{\"U}ber oligonitrophile mikroben, centralblatt fur bakteriologie,
+  parasitenkunde, infektionskrankheiten und hygiene}.
+\newblock \emph{Abteilung II}, 1901.
+
+\bibitem[Crespi and G{\'a}lvez(2000)]{Crespi:2000dw}
+Martin Crespi and Susana G{\'a}lvez.
+\newblock {Molecular mechanisms in root nodule development}.
+\newblock \emph{Journal of Plant Growth Regulation}, 2000.
+
+\bibitem[Oldroyd and Downie(2008)]{Oldroyd:2008hd}
+Giles E~D Oldroyd and J~Allan Downie.
+\newblock {Coordinating Nodule Morphogenesis with Rhizobial Infection in
+  Legumes}.
+\newblock \emph{Annual Review of Plant Biology}, 2008.
+
+\bibitem[Perret et~al.(2000)Perret, Staehelin, and Broughton]{Perret:2000ue}
+Xavier Perret, Christian Staehelin, and William~J Broughton.
+\newblock {Molecular basis of symbiotic promiscuity}.
+\newblock \emph{Microbiology and Molecular Biology Reviews}, 2000.
+
+\bibitem[Helal and Sauerbeck(1988)]{Helal:1988tq}
+Helal~M Helal and Dieter Sauerbeck.
+\newblock {Carbon turnover in the rhizosphere}.
+\newblock \emph{Zeitschrift f{\"u}r Pflanzenern{\"a}hrung und Bodenkunde},
+  1988.
+
+\bibitem[Zuanazzi et~al.(1998)Zuanazzi, Clergeot, Quirion, Husson, Kondorosi,
+  and Ratet]{Zuanazzi:1998vk}
+Jos{\'e} Angelo~Silveira Zuanazzi, Pierre~Henri Clergeot, Jean-Charles Quirion,
+  Henri-Philippe Husson, Adam Kondorosi, and Pascal Ratet.
+\newblock {Production of \emph{Sinorhizobium meliloti} nod Gene Activator and
+  Repressor Flavonoids from \emph{Medicago sativa} Roots}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 1998.
+
+\bibitem[Hirsch(1992)]{Hirsch:1992vo}
+Ann~M Hirsch.
+\newblock {Developmental biology of legume nodulation}.
+\newblock \emph{New Phytologist}, 1992.
+
+\bibitem[Oldroyd et~al.(2011)Oldroyd, Murray, Poole, and
+  Downie]{Oldroyd:2011ej}
+Giles E~D Oldroyd, Jeremy~D Murray, Philip~S Poole, and J~Allan Downie.
+\newblock {The Rules of Engagement in the Legume-Rhizobial Symbiosis}.
+\newblock \emph{Annual Review of Genetics}, 2011.
+
+\bibitem[D{\'e}narie and Debell{\'e}(1996)]{Denarie:1996ts}
+Jean D{\'e}narie and Fr{\'e}d{\'e}ric Debell{\'e}.
+\newblock {Rhizobium lipo-chitooligosaccharide nodulation factors: Signaling
+  molecules mediating recognition and morphogenesis}.
+\newblock \emph{Annual Review of Biochemistry}, 1996.
+
+\bibitem[Parniske(2008)]{Parniske:2008jx}
+Martin Parniske.
+\newblock {Arbuscular mycorrhiza: the mother of plant root endosymbioses}.
+\newblock \emph{Nature Reviews Microbiology}, 2008.
+
+\bibitem[Oldroyd and Downie(2004)]{Oldroyd:2004dv}
+Giles E~D Oldroyd and J~Allan Downie.
+\newblock {Calcium, kinases and nodulation signalling in legumes}.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, 2004.
+
+\bibitem[Truchet et~al.(1991)Truchet, Roche, Lerouge, Vasse, Camut, de~Billy,
+  Prom{\'e}, and D{\'e}narie]{Truchet:1991tu}
+Georges Truchet, Philippe Roche, Patrice Lerouge, Jacques Vasse, Sylvie Camut,
+  Fran{\c c}oise de~Billy, Jean-Claude Prom{\'e}, and Jean D{\'e}narie.
+\newblock {Sulphated lipo-oligosaccharide signals of \emph{Rhizobium meliloti}
+  elicit root nodule organogenesis in alfalfa}.
+\newblock \emph{Nature}, 1991.
+
+\bibitem[Gage(2004)]{Gage:2004ee}
+Daniel~J Gage.
+\newblock {Infection and Invasion of Roots by Symbiotic, Nitrogen-Fixing
+  Rhizobia during Nodulation of Temperate Legumes}.
+\newblock \emph{Microbiology and Molecular Biology Reviews}, 2004.
+
+\bibitem[Grierson and Schiefelbein(2002)]{Grierson:2002jf}
+Claire Grierson and John Schiefelbein.
+\newblock {Root Hairs}.
+\newblock \emph{The Arabidopsis Book}, 2002.
+
+\bibitem[Geurts et~al.(2005)Geurts, Fedorova, and Bisseling]{Geurts:2005jx}
+Ren{\'e} Geurts, Elena Fedorova, and Ton Bisseling.
+\newblock {Nod factor signaling genes and their function in the early stages of
+  Rhizobium infection}.
+\newblock \emph{Current Opinion in Plant Biology}, 2005.
+
+\bibitem[Ridge and Rolfe(1985)]{Ridge:1985wo}
+Robert~W Ridge and Barry~G Rolfe.
+\newblock {\emph{Rhizobium sp}. degradation of legume root hair cell wall at
+  the site of infection thread origin}.
+\newblock \emph{Applied and Environmental Microbiology}, 1985.
+
+\bibitem[Monahan-Giovanelli et~al.(2006)Monahan-Giovanelli, Pinedo, and
+  Gage]{MonahanGiovanelli:2006ki}
+H~Monahan-Giovanelli, Catalina~Arango Pinedo, and Daniel~J Gage.
+\newblock {Architecture of infection thread networks in developing root nodules
+  induced by the symbiotic bacterium \emph{Sinorhizobium meliloti} on
+  \emph{Medicago trunculata}}.
+\newblock \emph{Plant Physiology}, 2006.
+
+\bibitem[Meckfessel et~al.(2012)Meckfessel, Blancaflor, Plunkett, Dong, and
+  Dickstein]{Meckfessel:2012df}
+M~H Meckfessel, E~B Blancaflor, M~Plunkett, Q~Dong, and R~Dickstein.
+\newblock {Multiple Domains in MtENOD8 Protein Including the Signal Peptide
+  Target It to The Symbiosome}.
+\newblock \emph{Plant Physiology}, 2012.
+
+\bibitem[Van~de Velde et~al.(2010)Van~de Velde, Zehirov, Szatmari, Debreczeny,
+  Ishihara, Kevei, Farkas, Mikulass, Nagy, Tiricz, Satiat-Jeunemaitre, Alunni,
+  Bourge, Kucho, Abe, Kereszt, Maroti, Uchiumi, Kondorosi, and
+  Mergaert]{VandeVelde:2010cn}
+Willem Van~de Velde, Grigo Zehirov, Agnes Szatmari, Monika Debreczeny, Hironobu
+  Ishihara, Zoltan Kevei, Atilla Farkas, Kata Mikulass, Andrea Nagy, Hilda
+  Tiricz, Beatric Satiat-Jeunemaitre, Benoit Alunni, Mickael Bourge, Ken-ichi
+  Kucho, Mikiko Abe, Atilla Kereszt, gergely Maroti, Toshiki Uchiumi, Eva
+  Kondorosi, and Peter Mergaert.
+\newblock {Plant Peptides Govern Terminal Differentiation of Bacteria in
+  Symbiosis}.
+\newblock \emph{Science}, 2010.
+
+\bibitem[Jamet et~al.(2003)Jamet, Sigaud, Van~de Sype, Puppo, and
+  H{\'e}rouart]{Jamet:2003us}
+Alexandre Jamet, Samuel Sigaud, Ghislaine Van~de Sype, Alain Puppo, and Didier
+  H{\'e}rouart.
+\newblock {Expression of the bacterial catalase genes during
+  \emph{Sinorhizobium meliloti-Medicago sativa }symbiosis and their curcial
+  role during the infection process}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 2003.
+
+\bibitem[Karr et~al.(1992)Karr, Emerich, and Karr]{Karr:1992uk}
+D~B Karr, D~W Emerich, and A~L Karr.
+\newblock {Accumulation of the phytoalexin, glyceollin, in root nodules of
+  soybean formed by effective and ineffective strains of \emph{Bradyrhizobium
+  japonicum}}.
+\newblock \emph{Journal of Chemical Ecology}, 1992.
+
+\bibitem[Ramachandran et~al.(2011)Ramachandran, East, Karunakaran, Downie, and
+  Poole]{Ramachandran:2011iq}
+Vinoy~K Ramachandran, Alison~K East, Ramakrishnan Karunakaran, J~Allan Downie,
+  and Philip~S Poole.
+\newblock {Adaptation of Rhizobium leguminosarum to pea, alfalfa and sugar beet
+  rhizospheres investigated by comparative transcriptomics}.
+\newblock \emph{Genome Biology}, 2011.
+
+\bibitem[Ott et~al.(2009)Ott, Sullivan, James, Flemetakis, G{\"u}nther, Gibon,
+  Ronson, and Udvardi]{Ott:2009vx}
+Thomas Ott, John Sullivan, Euan~K James, Emmanouil Flemetakis, Catrin
+  G{\"u}nther, Yves Gibon, Clive Ronson, and M~Udvardi.
+\newblock {Absence of symbiotic leghemoglobins alters bacteroid and plant cell
+  differentiation during development of \emph{Lotus japonicus} root nodules}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 2009.
+
+\bibitem[Oono et~al.(2010)Oono, Schmitt, Sprent, and Denison]{Oono:2010hg}
+Ryoko Oono, Imke Schmitt, Janet~I Sprent, and R~Ford Denison.
+\newblock {Multiple evolutionary origins of legume traits leading to extreme
+  rhizobial differentiation}.
+\newblock \emph{New Phytologist}, 2010.
+
+\bibitem[Mergaert et~al.(2006)Mergaert, Uchiumi, Alunni, Evanno, Cheron,
+  Catrice, Mausset, Barloy-Hubler, Balibert, Kondorosi, and
+  Kondorosi]{Mergaert:2006wi}
+Peter Mergaert, Toshiki Uchiumi, Benoit Alunni, Gw{\'e}na{\"e}lle Evanno,
+  Ang{\'e}lique Cheron, Oliver Catrice, Anne-Elisabeth Mausset,
+  Fr{\'e}d{\'e}rique Barloy-Hubler, Frances Balibert, Adam Kondorosi, and Eva
+  Kondorosi.
+\newblock {Eukaryotic control on bacterial cell cycle and differentiation in
+  the Rhizobium{\textendash}legume symbiosis}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 2006.
+
+\bibitem[Farkas et~al.(2014)Farkas, Maroti, Durg, Gyorgypal, Lima,
+  Medzihradszky, Kereszt, Mergaert, and Kondorosi]{Farkas:2014dv}
+A~Farkas, G~Maroti, H~Durg, Z~Gyorgypal, R~M Lima, K~F Medzihradszky,
+  A~Kereszt, P~Mergaert, and E~Kondorosi.
+\newblock {Medicago truncatula symbiotic peptide NCR247 contributes to
+  bacteroid differentiation through multiple mechanisms}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 2014.
+
+\bibitem[Ryu et~al.(2012)Ryu, Cho, Choi, and Hwang]{Ryu:2012dt}
+Hojin Ryu, Hyunwoo Cho, Daeseok Choi, and Ildoo Hwang.
+\newblock {Plant hormonal regulation of nitrogen-fixing nodule organogenesis}.
+\newblock \emph{Molecules and Cells}, 2012.
+
+\bibitem[Clarke et~al.(2014)Clarke, Loughlin, Day, and Smith]{Smith:2014jg}
+Victoria~C Clarke, Patric~C Loughlin, David~A Day, and Penelope M~C Smith.
+\newblock {Transport processes of the legume symbiosome membrane}.
+\newblock \emph{Frontiers in Plant Science}, 2014.
+
+\bibitem[Roth and Stacey(1989)]{Roth:1989vz}
+L~E Roth and G~Stacey.
+\newblock {Cytoplasmic membrane systems involved in bacterium release into
+  soybean nodule cells as studied with two Bradyrhizobium japonicum mutant
+  strains. }.
+\newblock \emph{European Journal of Cell Biology}, 1989.
+
+\bibitem[Hohnjec et~al.(2009)Hohnjec, Lenz, Fehlberg, Vieweg, Baier, Hause, and
+  K{\"u}ster]{Hohnjec:2009uk}
+Natalija Hohnjec, Frauke Lenz, Vera Fehlberg, Martin~F Vieweg, Markus~C Baier,
+  Bettina Hause, and Helge K{\"u}ster.
+\newblock {The signal peptide of the Medicago truncatula modular nodulin
+  MtNOD25 operates as an adress label for the specific targeting of proteins to
+  nitrogen-fixing symbiosomes}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 2009.
+
+\bibitem[Catalano et~al.(2004)Catalano, Lane, and Sherrier]{Catalano:2004du}
+Christina~M Catalano, William~S Lane, and D~Janine Sherrier.
+\newblock {Biochemical characterization of symbiosome membrane proteins from
+  \emph{Medicago truncatula} root nodules}.
+\newblock \emph{ELECTROPHORESIS}, 2004.
+
+\bibitem[Whitehead and Day(1997)]{Whitehead:1997wu}
+Lynne~F Whitehead and David~A Day.
+\newblock {The peribacteroid membrane}.
+\newblock \emph{Physiologia Plantarum}, 1997.
+
+\bibitem[Halbleib and Ludden(2000)]{Halbleib:2000tx}
+Cale~M Halbleib and Paul~W Ludden.
+\newblock {Regulation of biological nitrogen fixation}.
+\newblock \emph{Journal of Nutrition}, 2000.
+
+\bibitem[Udvardi et~al.(1988)Udvardi, Price, Gresshoff, and
+  Day]{Udvardi:1988wm}
+Michael~K Udvardi, G~Dean Price, Peter~M Gresshoff, and David~A Day.
+\newblock {A dicarboxylate transporter on the peribacteroid membrane of soybean
+  nodules}.
+\newblock \emph{Febs Letters}, 1988.
+
+\bibitem[Howitt et~al.(1986)Howitt, Udvardi, Day, and Gresshoff]{Howitt:1986wq}
+Susan~M Howitt, Michael~K Udvardi, David~A Day, and Peter~M Gresshoff.
+\newblock {Ammonia transport in free-living and symbiotic\emph{ Rhizobium} sp.
+  ANU289}.
+\newblock \emph{Journal of General Microbiology}, 1986.
+
+\bibitem[Hwang et~al.(2010)Hwang, Ellingson, and Roberts]{Hwang:2010cs}
+Jin~Ha Hwang, Sally~R Ellingson, and Daniel~M Roberts.
+\newblock {Ammonia permeability of the soybean nodulin 26 channel}.
+\newblock \emph{Febs Letters}, 2010.
+
+\bibitem[Simonsen and Rosendahl(1999)]{Simonsen:1999hj}
+Anna Carina~Wiborg Simonsen and Lis Rosendahl.
+\newblock {Origin of de novo synthesized protein s in the different
+  compartments of Pea-\emph{Rhizobium} sp. symbiosomes}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 1999.
+
+\bibitem[Emerich and Krishnan(2014)]{Emerich:2014fo}
+David~W Emerich and Hari~B Krishnan.
+\newblock {Symbiosomes: temporary moonlighting organelles}.
+\newblock \emph{Biochemical Journal}, 2014.
+
+\bibitem[Cabeza et~al.(2014)Cabeza, Koester, Liese, Lingner, Baumgarten, Dirks,
+  Salinas-Riester, Pommerenke, Dittert, and Schulze]{Cabeza:2014ht}
+R~Cabeza, B~Koester, R~Liese, A~Lingner, V~Baumgarten, J~Dirks,
+  G~Salinas-Riester, C~Pommerenke, K~Dittert, and J~Schulze.
+\newblock {An RNA Sequencing Transcriptome Analysis Reveals Novel Insights into
+  Molecular Aspects of the Nitrate Impact on the Nodule Activity of
+  \emph{Medicago truncatula}}.
+\newblock \emph{Plant Physiology}, 2014.
+
+\bibitem[Peng et~al.(2014)Peng, Hao, Liu, Wang, Ma, Yang, Xie, and
+  Li]{Peng:2014dz}
+Jieli Peng, Baohai Hao, Liu Liu, Shanming Wang, Binguang Ma, Yi~Yang, Fuli Xie,
+  and Youguo Li.
+\newblock {RNA-Seq and Microarrays Analyses Reveal Global Differential
+  Transcriptomes of Mesorhizobium huakuii 7653R between Bacteroids and
+  Free-Living Cells}.
+\newblock \emph{PLoS ONE}, 2014.
+
+\bibitem[Moreau et~al.(2011)Moreau, Verdenaud, Ott, Letort, de~Billy, Niebel,
+  Gouzy, de~Carvalho-Niebel, and Gamas]{Moreau:2011en}
+Sandra Moreau, Marion Verdenaud, Thomas Ott, S{\'e}bastien Letort, Fran{\c
+  c}oise de~Billy, Andreas Niebel, J{\'e}r{\^o}me Gouzy, Fernanda
+  de~Carvalho-Niebel, and Pascal Gamas.
+\newblock {Transcription Reprogramming during Root Nodule Development in
+  Medicago truncatula}.
+\newblock \emph{PLoS ONE}, 2011.
+
+\bibitem[Breakspear et~al.(2015)Breakspear, Liu, Roy, Stacey, Rogers, Trick,
+  Morieri, Mysore, Wen, Oldroyd, Downie, and Murray]{Breakspear:2015ek}
+Andrew Breakspear, Chengwu Liu, Sonali Roy, Nicola Stacey, Christian Rogers,
+  Martin Trick, Giulia Morieri, Kirankumar~S Mysore, Jiangqi Wen, Giles E~D
+  Oldroyd, J~Allan Downie, and Jeremy~D Murray.
+\newblock {The Root Hair {\textquotedblleft}Infectome{\textquotedblright} of
+  Medicago truncatulaUncovers Changes in Cell Cycle Genes and Reveals a
+  Requirement for Auxin Signaling in Rhizobial Infection}.
+\newblock \emph{The Plant Cell}, 2015.
+
+\bibitem[Becker et~al.(2004)Becker, Berges, Krol, Bruand, R{\"u}berg, Capela,
+  Lauber, Meilhoc, Ampe, de~Bruijn, Fourment, Francez-Charlot, Kahn,
+  K{\"u}ster, Liebe, P{\"u}hler, Weidner, and Batut]{Becker:2004ts}
+Anke Becker, Helene Berges, Elizaveta Krol, Claude Bruand, Silvia R{\"u}berg,
+  Delphine Capela, Emmanuelle Lauber, Eliane Meilhoc, Fr{\'e}d{\'e}ric Ampe,
+  Frans~J de~Bruijn, Jo{\"e}lle Fourment, Anne Francez-Charlot, Daniel Kahn,
+  Helge K{\"u}ster, Carine Liebe, Alfred P{\"u}hler, Stefan Weidner, and
+  Jacques Batut.
+\newblock {Global changes in gene expression in \emph{Sinorhizobium mliloti
+  }1021 under microoxic and symbiotic conditions}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 2004.
+
+\bibitem[Rensink and Buell(2005)]{Rensink:2005da}
+Willem~Albert Rensink and C~Robin Buell.
+\newblock {Microarray expression profiling resources for plant genomics}.
+\newblock \emph{Trends in Plant Science}, 2005.
+
+\bibitem[Guttikonda et~al.(2010)Guttikonda, Trupti, Bisht, Chen, An, Pandey,
+  Xu, and Yu]{Guttikonda:2010hq}
+Satish~K Guttikonda, Joshi Trupti, Naveen~C Bisht, Hui Chen, Yong-Qiang~C An,
+  Sona Pandey, Dong Xu, and Oliver Yu.
+\newblock {Whole genome co-expression analysis of soybean cytochrome P450 genes
+  identifies nodulation-specific P450 monooxygenases}.
+\newblock \emph{BMC Plant Biology}, 2010.
+
+\bibitem[Martin et~al.(2013)Martin, Fei, Giovannoni, and Rose]{Martin:2013hg}
+Laetitia B~B Martin, Zhangjun Fei, James~J Giovannoni, and Jocelyn K~C Rose.
+\newblock {Catalyzing plant science research with RNA-seq}.
+\newblock \emph{Frontiers in Plant Science}, 2013.
+
+\bibitem[Wang et~al.(2009)Wang, Gerstein, and Snyder]{Wang:2009di}
+Zhong Wang, Mark Gerstein, and Michael Snyder.
+\newblock {RNA-Seq: a revolutionary tool for transcriptomics}.
+\newblock \emph{Nature Reviews Genetics}, 2009.
+
+\bibitem[Creecy and Conway(2015)]{Creecy:2015bk}
+James~P Creecy and Tyrrell Conway.
+\newblock {Quantitative bacterial transcriptomics with RNA-seq}.
+\newblock \emph{Current Opinion in Microbiology}, 2015.
+
+\bibitem[Sharma and Vogel(2014)]{Sharma:2014ed}
+Cynthia~M Sharma and J{\"o}rg Vogel.
+\newblock {ScienceDirectDifferential RNA-seq: the approach behind and the
+  biological insight gained}.
+\newblock \emph{Current Opinion in Microbiology}, 2014.
+
+\bibitem[Hussain et~al.(2005)Hussain, Jiang, Broughton, and
+  Gresshoff]{Hussain:2005vu}
+A~K M~Anwar Hussain, Qunyi Jiang, WilliamJ Broughton, and Peter~M Gresshoff.
+\newblock {\emph{Lotus japonicus }nodulates and fixes nitrogen with the broad
+  host range \emph{Rhizobium }sp. NGR234}.
+\newblock \emph{Plant Cell Physiology}, 2005.
+
+\bibitem[Schmeisser et~al.(2009)Schmeisser, Liesegang, Krysciak, Bakkou,
+  Le~Quere, Wollherr, Heinemeyer, Morgenstern, Pommerening-Roser, Flores,
+  Palacios, Brenner, Gottschalk, Schmitz, Broughton, Perret, Strittmatter, and
+  Streit]{Schmeisser:2009cp}
+C~Schmeisser, H~Liesegang, D~Krysciak, N~Bakkou, A~Le~Quere, A~Wollherr,
+  I~Heinemeyer, B~Morgenstern, A~Pommerening-Roser, M~Flores, R~Palacios,
+  S~Brenner, G~Gottschalk, R~A Schmitz, W~J Broughton, X~Perret, A~W
+  Strittmatter, and W~R Streit.
+\newblock {Rhizobium sp. Strain NGR234 Possesses a Remarkable Number of
+  Secretion Systems}.
+\newblock \emph{Applied and Environmental Microbiology}, 2009.
+
+\bibitem[Journet et~al.(2006)Journet, de~Carvalo-Niebel, Andriankaja, Huguet,
+  and Barker]{Journet:2006ws}
+E~P Journet, F~de~Carvalo-Niebel, A~Andriankaja, T~Huguet, and D~G Barker.
+\newblock {Rhizobial incouclation and nodulation of \emph{Medicago
+  truncatula}}.
+\newblock \emph{Medicago truncatula handbook}, 2006.
+
+\bibitem[Sasaki et~al.(2013)Sasaki, Suzaki, and Kawaguchi]{Sasaki:2013wj}
+Takem Sasaki, Takuya Suzaki, and Masayoshi Kawaguchi.
+\newblock {Stable transformation in \emph{Lotus Japonicus}}.
+\newblock \emph{Bio-protocol}, 2013.
+
+\bibitem[D{\'\i}az et~al.(2005)D{\'\i}az, Gr{\o}nlund, Schlaman, and
+  Spaink]{Diaz:2005ud}
+Clara~L D{\'\i}az, Mett Gr{\o}nlund, Helmi R~M Schlaman, and Herman~P Spaink.
+\newblock \emph{{Induction of hairy roots in \emph{Lotus japonicus} for
+  symbiotic gene expression studies}}.
+\newblock Lotus japonicus handbook, 2005.
+
+\bibitem[Wienkoop(2005)]{Wienkoop:2005wu}
+Stefanie Wienkoop.
+\newblock {Isolation of peribacteroid membrane of \emph{Lotus japonicus }for
+  proteome analysis}.
+\newblock In \emph{Lotus japonicus Handbook}. 2005.
+
+\bibitem[Kazandjian et~al.(2008)Kazandjian, Shepherd, Rodriguez-Lanetty,
+  Nordmeier, Larkum, and Quinnell]{Kazandjian:2008vu}
+Aniuska Kazandjian, Virginia~A Shepherd, Mauricio Rodriguez-Lanetty, Wiebke
+  Nordmeier, Anthony W~D Larkum, and Rosanne~G Quinnell.
+\newblock {Isolation of symbiosomes and the symbiosome membrane complex from
+  the zoanthid \emph{Zoanthus robustus}}.
+\newblock \emph{Phycologia}, 2008.
+
+\bibitem[Panter et~al.(2000)Panter, Thomson, de~Bruxelles, laver, Trevaskis,
+  and Udvardi]{Panter:2000wj}
+S~Panter, R~Thomson, G~de~Bruxelles, D~laver, B~Trevaskis, and M~Udvardi.
+\newblock {Identification with the proteomics of novel proteins associated with
+  peribacteroid membrane of soybean root nodules}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 2000.
+
+\bibitem[Wang et~al.(2012)Wang, Hayatsu, and Fujii]{Wang:2012gj}
+Yong Wang, Masahito Hayatsu, and Takeshi Fujii.
+\newblock {Extraction of Bacterial RNA from Soil: Challenges and Solutions}.
+\newblock \emph{Microbes and Environments}, 2012.
+
+\bibitem[Stark et~al.(2014)Stark, Giersch, and W{\"u}nschiers]{Stark:2014ea}
+Lucy Stark, Tina Giersch, and R{\"o}bbe W{\"u}nschiers.
+\newblock {Efficiency of RNA extraction from selected bacteria in the context
+  of biogas production and metatranscriptomics}.
+\newblock \emph{Anaerobe}, 2014.
+
+\bibitem[Sessitsch et~al.(2002)Sessitsch, Gyamfi, Stralis-Pavese, Weilherter,
+  and Pfeifer]{Sessitsch:2002vq}
+Angela Sessitsch, Stephen Gyamfi, Nanci Stralis-Pavese, Alexandra Weilherter,
+  and Ulrike Pfeifer.
+\newblock {RNA isolation from soil for bacterial community and functional
+  analysis: evaluation of different extraction and soil conservation
+  protocols}.
+\newblock \emph{Journal of Microbiological Methods}, 2002.
+
+\bibitem[Vercruysse et~al.(2010)Vercruysse, Fauvart, Cloots, Engelen, Thijs,
+  Marchal, and Michiels]{Vercruysse:2010ji}
+Maarten Vercruysse, Maarten Fauvart, Lore Cloots, Kristof Engelen, Inge~M
+  Thijs, Kathleen Marchal, and Jan Michiels.
+\newblock {Genome-wide detection of predicted non-coding RNAs in Rhizobium etli
+  expressed during free-living and host-associated growth using a
+  high-resolution tiling array}.
+\newblock \emph{BMC Genomics}, 2010.
+
+\bibitem[Soyano and Hayashi(2014)]{Soyano:2014ic}
+Takashi Soyano and Makoto Hayashi.
+\newblock {Transcriptional networks leading to symbiotic nodule organogenesis}.
+\newblock \emph{Current Opinion in Plant Biology}, 2014.
+
+\bibitem[Hirsch and Smith(1987)]{Hirsch:1987ux}
+Ann~M Hirsch and Carol~A Smith.
+\newblock {Effects of \emph{Rhizobium meliloti} \emph{nif} and \emph{fix}
+  mutants on nodule development}.
+\newblock \emph{Journal of Bacteriology}, 1987.
+
+\bibitem[Lang and Long(2015)]{Lang:2015wt}
+Claus Lang and Sharon~R Long.
+\newblock {Transcriptomic analysis of \emph{Sinorhizobium meliloti} and
+  \emph{Medicago truncatula} symbiosis using nitrogen fixationg deficient
+  nodules}.
+\newblock \emph{Molecular Plant-Microbe Interactions}, 2015.
+
+\bibitem[Karunakaran et~al.(2010)Karunakaran, Haag, East, Ramachandran, Prell,
+  James, Scocchi, Ferguson, and Poole]{Karunakaran:2010gr}
+R~Karunakaran, A~F Haag, A~K East, V~K Ramachandran, J~Prell, E~K James,
+  M~Scocchi, G~P Ferguson, and P~S Poole.
+\newblock {BacA Is Essential for Bacteroid Development in Nodules of Galegoid,
+  but not Phaseoloid, Legumes}.
+\newblock \emph{Journal of Bacteriology}, 2010.
+
+\bibitem[Gallon(1981)]{Gallon:1981uq}
+J~R Gallon.
+\newblock {The oxygen sensitivity of nitrogenase: a problem for biochemists and
+  micro-organisms}.
+\newblock \emph{Trends in Biochemical Sciences}, 1981.
+
+\bibitem[Merrick and Edwards(1995)]{Merrick:1995tf}
+M~J Merrick and R~A Edwards.
+\newblock {Nitrogen control in bacteria}.
+\newblock \emph{Microbiological Reviews}, 1995.
+
+\bibitem[Sikora et~al.(2011)Sikora, Chawade, Larsson, Olsson, and
+  Olsson]{Sikora:2011fk}
+Per Sikora, Aakash Chawade, Mikael Larsson, Johanna Olsson, and Olof Olsson.
+\newblock {Mutagenesis as a Tool in Plant Genetics, Functional Genomics, and
+  Breeding}.
+\newblock \emph{International Journal of Plant Genomics}, 2011.
+
+\bibitem[Flibotte et~al.(2010)Flibotte, Edgley, Chaudhry, Taylor, Neil, Rogula,
+  Zapf, Hirst, Butterfield, Jones, Marra, Barstead, and
+  Moerman]{Flibotte:2010fc}
+S~Flibotte, M~L Edgley, I~Chaudhry, J~Taylor, S~E Neil, A~Rogula, R~Zapf,
+  M~Hirst, Y~Butterfield, S~J Jones, M~A Marra, R~J Barstead, and D~G Moerman.
+\newblock {Whole-Genome Profiling of Mutagenesis in Caenorhabditis elegans}.
+\newblock \emph{Genetics}, 2010.
+
+\bibitem[Vessey(1994)]{Vessey:1994vc}
+J~Kevin Vessey.
+\newblock {Measurement of nitrogenase activity in legume root nodules: In
+  defense of the acetylene reduction assay}.
+\newblock \emph{Plant and Soi}, 1994.
+
+\bibitem[Barsomian et~al.(1991)Barsomian, Urzainqui, Lohman, and
+  Walker]{Barsomian:1991uc}
+Gary~D Barsomian, Ana Urzainqui, Karin Lohman, and Graham~C Walker.
+\newblock {\emph{Rhizobium meliloti }mutants unable to synthesize anthranilate
+  display a novel symbiotic phenotype}.
+\newblock \emph{Journal of Bacteriology}, 1991.
+
+\bibitem[Esseling et~al.(2004)Esseling, Lhuissier, and Emons]{Esseling:2004ja}
+J~J Esseling, Franck G~P Lhuissier, and Anne Mie~C Emons.
+\newblock {A nonsymbiotic root hair tip growth phenotype in NORK-mutated
+  legumes: implications for nodulation factor-induced signaling and formation
+  of a multifaceted root hair pocket for bacteria}.
+\newblock \emph{The Plant Cell}, 2004.
+
+\bibitem[Brady and Weil(2008)]{Brady:2008vg}
+Nyle~C Brady and Ray~R Weil.
+\newblock \emph{{The Nature and Properties of Soils}}.
+\newblock Pearson Prentice Hall, 2008.
+
+\end{thebibliography}
