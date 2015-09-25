@@ -27,3 +27,6 @@
 *.nav
 *.toc
 *.snm
+
+
+figs/*
