@@ -22,3 +22,8 @@
 *.eps
 *.ai
 
+
+*.key*
+*.nav
+*.toc
+*.snm
