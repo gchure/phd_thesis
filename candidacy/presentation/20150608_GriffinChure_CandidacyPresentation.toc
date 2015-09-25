@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{How do genomes evolve?}{2}{0}{1}
+\beamer@sectionintoc {2}{What happens at the cellular level?}{7}{0}{2}
+\beamer@sectionintoc {3}{What are the limits of natural transformation?}{15}{0}{3}
+\beamer@sectionintoc {4}{How frequent is transduction?}{20}{0}{4}
+\beamer@sectionintoc {5}{Does HGT care about position?}{25}{0}{5}
+\beamer@sectionintoc {6}{In conclusion\ldots }{28}{0}{6}

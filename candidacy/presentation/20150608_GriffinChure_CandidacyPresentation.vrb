@@ -1,0 +1,28 @@
+\frametitle{Why take the risk?}
+
+\begin{columns}[T]
+^^I\begin{column}{0.48\textwidth}
+^^I^^I\includegraphics[width=\textwidth]{figs/kloesges_et_al.png}\\
+^^I^^I\tiny{Kloesges et al. \textit{Mol. Biol. Evol.} 28(2) 2010}
+^^I\end{column}
+\pause
+^^I\begin{column}{0.48\textwidth}
+^^IForeign DNA may be taken up to \ldots
+^^I^^I\begin{itemize}
+^^I^^I^^I\item be used as a carbon source.
+^^I^^I^^I^^I\vspace{-1em}\begin{itemize}
+^^I^^I^^I^^I^^I\item \tiny{DNA-subsisting bacteria.}
+^^I^^I^^I^^I\end{itemize}
+^^I^^I^^I\item acquire new traits.
+^^I^^I^^I^^I\begin{itemize}
+^^I^^I^^I^^I^^I\item \tiny{Antibiotic resistance transfer.}
+^^I^^I^^I^^I\end{itemize}
+^^I^^I^^I\item use as a repair template.
+^^I^^I^^I^^I\begin{itemize}
+^^I^^I^^I^^I^^I\item \tiny{Single-species biofilms.}
+^^I^^I^^I^^I\end{itemize}
+^^I^^I\end{itemize}
+^^I\end{column}
+\end{columns}
+
+

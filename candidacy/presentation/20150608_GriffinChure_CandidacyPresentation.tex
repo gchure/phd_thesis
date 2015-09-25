@@ -1,0 +1,326 @@
+%Preamble shit------------------------------------------------------------------ 
+\input{/Users/gchure/tex_tools/beamer_default.tex}
+\usepackage{multimedia}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+
+
+%------------------------TITLE SHIT--------------------------------------------- 
+\title{The Mobile Genome: Probing Horizontal Gene Transfer at Single-Cell
+Resolution}
+\author{Griffin Chure - Rob Phillips Group - Candidacy Exam}
+\date{June 8, 2015}
+
+\begin{document}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}[fragile]
+	\titlepage
+\end{frame}
+%------------------------------------------------------------------------------- 
+%-------------------------SECTION I--------------------------------------------- 
+%------------------------------------------------------------------------------- 
+\section{How do genomes evolve?}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Genes flow in two directions.}
+	\centerline{\includegraphics[height=0.7\textheight]{figs/transfer_comparison.eps}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}[fragile]
+\frametitle{Why take the risk?}
+
+\begin{columns}[T]
+	\begin{column}{0.48\textwidth}
+		\includegraphics[width=\textwidth]{figs/kloesges_et_al.png}\\
+		\tiny{Kloesges et al. \textit{Mol. Biol. Evol.} 28(2) 2010}
+	\end{column}
+\pause
+	\begin{column}{0.48\textwidth}
+	Foreign DNA may be taken up to \ldots 
+		\begin{itemize}	
+			\item be used as a carbon source.
+				\vspace{-1em}\begin{itemize}
+					\item \tiny{DNA-subsisting bacteria.}
+				\end{itemize}
+			\item acquire new traits.
+				\begin{itemize}
+					\item \tiny{Antibiotic resistance transfer.}
+				\end{itemize}
+			\item use as a repair template.
+				\begin{itemize}
+					\item \tiny{Single-species biofilms.}
+				\end{itemize}
+		\end{itemize}
+	\end{column}
+\end{columns}
+
+
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{HGT occurs through three main mechanisms}
+	\centerline{\includegraphics[width=0.7\textwidth]{figs/mechanisms_of_transfer.png}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+%---------------------SECTION II------------------------------------------------ 
+%------------------------------------------------------------------------------- 
+
+\section{What happens at the cellular level?}
+
+% -------------------------------------------------------------------------------
+\begin{frame}
+	\frametitle{Bulk conditions are far from reality.}
+
+\begin{columns}[T]
+	\begin{column}{0.48\textwidth}
+		\centering{\includegraphics[width=0.8\textwidth]{figs/staph_biofilm.png}}\\
+		\tiny{Courtesy of CDC/ Rodney M. Donlan}
+	\end{column}
+	
+	\begin{column}{0.48\textwidth}
+	\begin{itemize}
+		\item Life is not always well-mixed.
+		\begin{itemize}
+			\item Environmental microbes thrive as biofilms
+		\end{itemize}
+
+		\item Plating only reveals the ``winners''.
+			\begin{itemize}
+				\item ``Losers'' may die
+				\item 1 colony $\neq$ 1 transformant!
+			\end{itemize} 
+		\item Single-cell methods allow the measurement of dynamics.
+	\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% -------------------------------------------------------------------------------
+\begin{frame}
+	\frametitle{How can we label DNA \emph{in vivo}?}
+	\centerline{\includegraphics[height=0.8\textheight]{figs/par_function_one.png}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{How can we label DNA \emph{in vivo}?}
+	\centerline{\includegraphics[height=0.8\textheight]{figs/par_function_two.png}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{How can we label DNA \emph{in vivo}?}
+	\centerline{\includegraphics[height=0.7\textheight]{figs/parB_system.png}}
+\end{frame}
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Puncta distinction is sensitive to copy number.}
+
+	\centerline{\includegraphics[height=0.8\textheight]{figs/example_cells.png}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Plasmid diffusion can be measured in real time.}
+\end{frame}	
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Plasmid diffusion can be measured in real time.}
+\end{frame}	
+
+%----------------------------QUESTION I----------------------------------------- 
+\section{What are the limits of natural transformation?}
+\begin{frame}
+	\frametitle{\emph{Bacillus subtilis} is naturally competent}
+	\begin{itemize}
+		\item Competence machinery and circuitry is well-characterized.\\
+		\item High-efficiency of genomic recombination.\\
+		\item Entry into competence is \alert{genetically controllable.}\\
+		\item Extent of DNA uptake is unknown.	\\
+	\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{\emph{Bacillus subtilis} is naturally competent.}
+	\centerline{\includegraphics[width=0.8\textwidth]{figs/bacillus_comG.png}}
+\end{frame}
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{How does the DNA dictate transfer?}
+	\centerline{\includegraphics[height=0.9\textheight]{figs/bacillus_transformation.eps}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Does DNA uptake influence the competence state?}
+	\centerline{\includegraphics[height=0.8\textheight]{figs/bacillus_competence.eps}}
+\end{frame}
+
+%----------------------------QUESTION II---------------------------------------- 
+\section{How frequent is transduction?}
+
+
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Viral infections aren't always bad.}
+	\centerline{\includegraphics[width=\textwidth]{figs/bacteriophage.png}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Transfer can be observed for ``winners'' and ``losers.''}
+	\centerline{\includegraphics[width=0.8\textwidth]{figs/transduction_simple.eps}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Transduction can be either general or specialized.}
+	\textbf{Generalized transduction:} Packaging of bacterial genes is
+	\alert{random} and transducing phage contain \alert{no viral DNA.}\\
+	\vspace*{1em}
+	\textbf{Specialized transduction:} Packaging of bacterial genes is
+	\alert{restricted} to those adjacent to prophage integration site and
+	transducing phage also contain \alert{viral DNA}.
+\end{frame}
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{How does transduction differ between P1 and $\lambda$?}
+	\centerline{\includegraphics[height=0.8\textheight]{figs/transduction_detailed.eps}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+
+%----------------------------QUESTION III--------------------------------------- 
+\section{Does HGT care about position?}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Genes are not evenly distributed.}
+	\centerline{\includegraphics[width=0.8\textwidth]{figs/position_function.png}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Does the genomic neighborhood influence recombination?}
+	\centerline{\includegraphics[width=0.9\textwidth]{figs/recombination_figure.eps}}
+\end{frame}
+
+%----------------------------SUMMARY-------------------------------------------- 
+\section{In conclusion\ldots}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{How do genomes evolve?}
+	\begin{center}\alert{What is the frequency and dynamics of HGT at single-cell resolution and what can
+	it tell us about complex microbial populations and
+communities?}\end{center}
+\begin{itemize}
+	\item What are the limits of natural transformation?
+		\begin{itemize}
+			\item Importance of concentration, size, and homology?
+			\item Importance in competence regulation?
+		\end{itemize}
+	\item How frequent is viral transduction?
+		\begin{itemize}
+			\item Transduction frequencies of P1 and $\lambda$?
+			\item Positional dependence of transferred loci?
+		\end{itemize}
+	\item Does HGT influence genome architecture?
+		\begin{itemize}
+			\item Gene occupancy and recombination efficiency?
+		\end{itemize}
+\end{itemize}
+
+\end{frame}
+%--------------------------THANKS----------------------------------------------- 
+\begin{frame}
+	\frametitle{Thanks to\ldots}
+\begin{itemize}
+	\item \textbf{Phillips Lab} \\
+			  \alert{Rob Brewster}, \alert{Jacob Shenker},
+				\alert{Robin Brown}, \alert{Rob Phillips},
+				Stephanie Barnes, Nathan Belliveau,
+				Tal Einav, Soichi
+				Hirokawa, Bill Ireland, Heun Jin Lee, Gita
+				Mahmoudabadi, Muir Morrison, Manuel Razo 
+
+	\item \textbf{Others}\\
+	\indent	Shimon Weiss (UCLA), Adam Rosenthal (Elowitz Lab)
+	\item \textbf{Funding}\\
+		NIH Training Grant  (T32GM07616)
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\plain{Questions?}
+
+%------------------------------------------------------------------------------- 
+
+%-----------------------EXTRA SLIDES-------------------------------------------- 
+\begin{frame}
+	\frametitle{Single-cell assays reveal hidden behavior.}
+	\centerline{\includegraphics[width=1.1\textwidth]{figs/single_cell_example.eps}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Competence in \emph{B. subtilis} is controlled by
+	{\small com}K.}
+	\centerline{\includegraphics[width=0.9\textwidth]{figs/bacillus_comp_circuit.eps}}
+\end{frame}
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{The Lambert-Kussel flow cell can increase throughput.}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\centerline{\includegraphics[width=\textwidth]{figs/lambert-kussel}}
+			{\tiny Lambert and Kussel. \textit{PLoS Genetics.}
+		10(9) 2014}
+	\end{column}
+	\begin{column}{0.48\textwidth}
+		\begin{itemize}
+			\item DNA containing media is flowed through chamber.
+				\begin{itemize}
+					\item Media exchange with wells is rapid
+						(~250ms for complete exchange).
+				\end{itemize}
+			\item Many hundreds of cells can be observed
+				over extended time periods.
+				\begin{itemize}
+					\item Allows for lineage analysis.
+				\end{itemize}
+			\item Does not sacrifice physiological relevance.
+				\begin{itemize}
+					\item Cells are closely packed as in
+						biofilms and colonies.
+				\end{itemize}
+		\end{itemize}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+
+%------------------------------------------------------------------------------- 
+\begin{frame}
+	\frametitle{Some P{\small ar}B homologs mislocalize in \emph{E. coli}.}
+
+
+\end{frame}
+
+
+
+%------------------------------------------------------------------------------- 
+\end{document}
+
+
