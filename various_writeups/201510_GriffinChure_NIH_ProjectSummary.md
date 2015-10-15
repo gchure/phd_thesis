@@ -9,17 +9,18 @@ genomes are constructed and organized. Whether by viral infection, conjugative
 transfer, or the direct uptake of DNA through transformation, bacteria
 frequently share their genetic material with their neighbors (including those of
 different species) influencing the architecture of the recipients' genome. How
-this horizontal transfer of genetic information has influenced their evolution,
-however, remains enigmatic. A vast majority of studies focusing on the frequency
-and efficiency of HGT in microbes are performed in bulk -- often involving
-cultures grown to saturation and measuring the success of HGT by counting
-"colony forming units" (CFU). This  leaves many aspects of what happens at the
-cellular level unanswered, however, as CFU serves a merely and approximation of
-cell number. In addition, microbial populations are often far from saturation in
-natural environments, and thrive as structured, non-homogeneous mixtures known
-as biofilms. The disparity in physiological relevance between the lab bench and
-the real-world calls for single-cell and single-molecule techniques to study the
-dynamics and evolutionary consequences of HGT. 
+strongly this horizontal transfer of genetic information has influenced their
+evolution, however, remains enigmatic. A vast majority of studies focusing on
+the frequency and efficiency of HGT in microbes are performed in bulk -- often
+involving cultures grown to saturation and measuring the success of HGT by
+counting "colony forming units" (CFU). This  leaves many aspects of what happens
+at the cellular level unanswered, however, as CFU serves a merely an
+approximation of cell number. In addition, microbial populations are often far
+from saturation in natural environments, and thrive as structured,
+non-homogeneous mixtures known as biofilms. The disparity in physiological
+relevance between the lab bench and the real-world calls for single-cell and
+single-molecule techniques to study the dynamics and evolutionary consequences
+of HGT. 
 
    The gram-positive bacterium *Bacillus subtilis* is famous for its ability to
 differentiate under exposure to nutritional or environmental stresses. When
@@ -51,14 +52,14 @@ WT system. While our genetically modified system allows comptence to be
 controlled through induction, it is unknown whether environmental and
 nutritional stresses induce other physiological process which promote or hinder
 DNA uptake and genomic recombination. To test if growth conditions influence
-the transformation freuqency of comptent cells, we performed the above
+the transformation freuqency of competent cells, we performed the above
 experiment with cells grown in aerobic and anaerobic conditions. Preliminary
 results suggest that at 'low' DNA concentrations (10^1^ -
 10^3^ plasmids / cell) there is little difference in frequency.
 However, at high DNA concentrations (10^4^ -- 10^5^ plasmids /
 cell), the difference is large with approximately 95% and 60% transformation
 frequencies for aerobic and anaerobic growth conditions respectively. While
-confirmation of these preliminary results are underway, it is interesting to the
+confirmation of these preliminary results are underway,  the
 effect of growth conditions is an interesting result. Experiments modulating
 nutritional stresses, such as using different or limited carbon sources, are
 currently underway. 
@@ -67,7 +68,7 @@ currently underway.
 determining transformation frequency, it is surprising that such a high
 concentration of DNA is needed to see transformation frequencies above 10%. Is
 this transforming fraction of the population more prone to DNA uptake than their
-counter parts? We are examining this aspect by using two populations of
+counterparts? We are examining this aspect by using two populations of
 plasmids encoding different fluorophore reporters. By measuring the
 frequency of double transformation, we will be able to further investigate the
 statistical nature of transformation. 
