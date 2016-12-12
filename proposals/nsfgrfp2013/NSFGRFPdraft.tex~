@@ -1,0 +1,51 @@
+\documentclass[12pt]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage[backend=bibtex, bibstyle=authoryear]{biblatex}
+\DeclareFieldFormat{bibentrysetcount}{\mkbibparens{\mknumalph{#1}}}
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{%
+    \printfield{prefixnumber}%
+    \printfield{labelnumber}}}
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
+\DeclareNameAlias{sortname}{last-first}
+\bibliography{grfpref.bib}
+\renewcommand{\bibfont}{\footnotesize}
+\defbibheading{myheading}[\small References]{
+  \section*{#1}}
+\begin{document}
+\begin{center}
+{\bf Structural Elucidation and Biochemical Characterization of Bacterial Undecaprenyl Pyrophosphate Phosphatase Protein BacA}
+\end{center}
+
+%%%%%%%%%%%%%%INTRODUCTION%%%%%%%%%%%%%%%%%
+
+\hspace*{5mm}Bacterial infections are a fact of life. The extensive use of antibiotics has prompted the evolution of bacterial ``super bugs" resistant to multiple types of antibiotics. These superbugs pose a severe threat to human health making the development of new therapeutic strategies imperative. The biosynthetic pathway of the peptidoglycan layer, a major part of the cell wall found in all bacteria, has been a popular target for antibiotic development historically. Antibiotics such as penicillins, cephalosporins, and other $\beta$-lactam drugs inhibit the soluble enzymes which catalyze the peptidoglycan biosynthetic reactions. While there has been extensive characterization of the enzymes in the cell wall biosynthetic pathway, there is still much left to understand about the membrane bound components. One enzyme of importance is BacA (also known as UppP) which is responsible for the conversion of undecaprenyl pyrophosphate (hereinafter referred to as C$_{55}$--PP) to its monophosphate counterpart. Maintaining the C$_{55}$--PP/C$_{55}$--P balance of the membrane is critical for biosynthetic pathways which use the prenyl lipid pool such as O-antigen biosynthesis, lipid A phosphorylation, protein glycosylation in gram negative bacteria, teichoic acid biosynthesis in gram positive bacteria, and peptidoglycan biosynthesis \cite{Loverling}. Overexpression of BacA has been shown to decrease the sensitivity of {\it E. coli} to the topical polypeptide antibiotic bacitracin \cite{Cain}. This feature makes BacA a good therapeutic target to treat bacterial infections in combination with other antibiotics.
+
+%%%%%%RESEARCH QUESTION AND PLAN%%%%%%%%%
+
+\indent BacA is conserved across the bacterial kingdom and accounts for approximately 75\% of C$_{55}$--PP recycling activity \cite{Ghachi}. However, both the structure and the phosphatase mechanism remains unknown. Understanding the structure is an important step in understanding the biochemistry behind BacA's activity. The cloning of BacA homologs from several different species of bacteria is currently underway. These homologs are being cloned into high expression vectors with varying affinity tags at either terminus of the protein, several of which have been successfully made. Expression testing of N-terminally (His)$_9$ tagged versions of four gram negative BacA homologs has shown that the level of overexpression needed for purification is feasible. Purification optimization is underway and crystallization trials will hopefully be in the near future. 
+
+\indent Membrane proteins are known for their resistance to crystallization, meaning that structural studies of these proteins requires a multifaceted approach. Lipidic cubic phase (LCP) and vapor diffusion crystallography will be used and optimized extensively to grow crystals of purified BacA. LCP crystallography involves crystallizing the protein in a lipidic phase consisting of bicontinuous lipid membranes separated by aqueous channels. This allows the membrane protein to be crystallized in an environment similar to that of a cell membrane. This method will be used primarily in this study to attain a high resolution crystal structure of BacA in its most native state. The California Institute of Technology has a beamline at the Stanford Synchrotron Radiation Light Source (SSRL) at which Caltech spends 40\% of the total time. Once BacA crystallization has been optimized, x-ray diffraction patterns will be easily attainable.
+
+\indent In addition to structural ambiguity, not much is known of the function of BacA at the molecular level. Growing crystals is a time consuming process. While crystallization trials are in progress, purified BacA will be used to develop and test {\it in vitro} activity assays to study both the kinetics and mechanism. A qualitative C$_{55}$--PP phosphatase assay has been described previously \cite{Ghachi}, but will need to be adapted and modified to provide useful quantitative data. The phosphate products generated by reaction of BacA with C$_{55}$--PP can be detected via thin layer chromatography and serve as a measurement of BacA activity. A recent study has shown that BacA contains several conserved sequences with a high level of identity to the tyrosine phosphate phosphatase catalytic domain of a tumor supressor protein PTEN, whose substrate is also lipid based \cite{Bickford}. The catalytic dependency of these sequences remain untested, however, putting emphasis on the need for a quantitative assay. Determining rate constants, important residues, and other valuable kinetic information will provide further insight into the function of this enzyme. Other projects in the lab are focusing on MraY, another protein in the biosynthetic pathway of peptidoglycan, whose substrate is the monophosphate undecaprenyl produced by BacA. Development of an assay capable of synthesizing C$_{55}$--P from the pyrophosphate substrate may prove valuable for other members in the lab whom can use C$_{55}$--P to probe MraY activity.
+
+\indent It is also unknown if BacA complexes with other members of the peptidoglycan biosynthesis pathway. Affinity pull-down assays, FRET studies, and co-crystallization with other pathway members may reveal previously unknown interactions and in turn, shed light on the operation of the biosynthetic pathway as a whole.
+
+%%%%%%%%%%%%%%%IMPACT%%%%%%%%%%%%%%%
+
+\indent ``Bacterial superbugs" has become a household phrase. It can be heard everywhere from news reports to advertisements for hand sanitizers. There are few who do not recognize the potential hazard to human health in the event of epidemic outbreak or in the unfortunate use of biological weapons. This makes the study of bacterial life processes essential in the search for new strategies for treating infection. The peptidoglycan biosynthetic pathway has been proven historically to be a successful target for drug development and while there has been much research in cell wall biosynthesis, there is still much to be understood. Further understanding of this pathway has the potential to open the door to drug development and novel therapeutic strategies. In addition to medical applications, structural studies of BacA can help advance the field of membrane structural biology. Membrane proteins are notoriously difficult to study structurally. While membrane proteins comprise a significant portion of all proteins in a cell, they represent a very small percentage of all solved protein structures. As more and more structures are solved, more and more is understood about how membrane proteins are translocated, folded, and how they function. Structural studies of BacA may provide insight into the function of related proteins as well as how they can be crystallized. 
+
+\printbibliography[heading=myheading]
+
+\end{document}

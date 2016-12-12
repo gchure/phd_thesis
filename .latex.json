@@ -1,0 +1,11 @@
+{
+  "projectPath": "/Users/gchure/Lab/PhillipsLab201401-XXX/thesis",
+  "title": "LaTeX-Plus Project",
+  "root": "proposals/coarse_grained_proteome/20161211_ideas.md",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": "./"
+}
