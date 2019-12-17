@@ -1,0 +1,632 @@
+\section{Results}
+This work considers the inducible simple repression regulatory motif
+[depicted in Fig. \ref{fig:induction_theory}(A)] from a thermodynamic
+perspective which has been thoroughly dissected and tested experimentally
+\cite{Garcia2011, Brewster2014, Razo-Mejia2018}. While we direct the reader
+to the SI text for a complete derivation, the result of this extensive
+theory-experiment dialogue is a succinct input-output function [schematized
+in Fig. \ref{fig:induction_theory}(B)] that computes the fold-change in gene
+expression relative to an unregulated promoter. This function is of the form
+\begin{equation}
+\text{fold-change} = \left(1 + {R_A \over
+N_{NS}}e^{-\beta\Delta\varepsilon_{RA}}\right)^{-1},
+\label{eq:foldchange}
+\end{equation}
+where $R_A$ is the number of active repressors per cell, $N_{NS}$ is the
+number of non-specific binding sites for the repressor,
+$\Delta\varepsilon_{RA}$ is the binding energy of the repressor
+to its specific binding site relative to the non-specific background, and
+$\beta$ is defined as ${1 \over k_B T}$ where $k_B$ is the Boltzmann constant
+and $T$ is the temperature. While this theory requires knowledge of the number
+of \textit{active} repressors, we often only know the total number $R$
+which is the sum total of active and inactive repressors. We can define a
+prefactor $p_\text{act}(c)$ which captures the
+allosteric nature of the repressor and encodes the probability a
+repressor is in the active (repressive) state rather than the inactive state
+for a given inducer concentration $c$, namely,
+\begin{equation}
+p_\text{act}(c) = {\left(1 + {c \over K_A}\right)^n \over \left(1 + {c \over
+K_A}\right)^n + e^{-\beta\Delta\varepsilon_{AI}}\left(1 + {c \over
+K_I}\right)^n}.
+\label{eq:pact}
+\end{equation}
+Here, $K_A$ and $K_I$ are the dissociation constants of the inducer to the
+active and inactive repressor, $\Delta\varepsilon_{AI}$ is the energetic
+difference between the repressor active and inactive states, and $n$ is the number of
+allosteric binding sites per repressor molecule ($n=2$ for LacI). With this in
+hand, we can define $R_A$ in \eqref{eq:foldchange} as $R_A = p_\text{act}(c)
+R$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{chapter_03_evolution/figs/Fig1.pdf}
+    \caption[A predictive framework for phenotypic and energetic dissection of
+the simple repression motif.]{(A) The inducible simple repression
+architecture. When in the active state, the repressor (gray) binds the
+cognate operator sequence of the DNA (red box) with high specificity,
+preventing transcription by occluding binding of the RNA polymerase to the
+promoter (blue rectangle). Upon addition of an inducer molecule, the inactive
+state becomes energetically preferable and the repressor no longer binds the operator
+sequence with appreciable specificity. Once unbound from the operator,
+binding of the RNA polymerase (blue) is no longer blocked and transcription
+can occur. (B) The simple repression input-output function for an allosteric
+repressor with two inducer binding sites. The key parameters are identified in
+speech bubbles. (C) The fold-change in gene expression collapses as a function of
+the free energy. The top panel shows measurements of the fold-change in gene
+expression as a function of inducer concentration from Razo-Mejia \textit{et
+al.} 2018. Points and errors correspond to the mean and standard error of the
+mean of at
+least 10 biological replicates. The thin lines represent the line of best fit
+given the model shown in (B). This model can be rewritten as a Fermi function
+with an energetic parameter $F$ which is the energetic difference between the
+repressor bound and unbound states of the promoter, schematized in the middle
+panel. The points in the bottom panel correspond to the data shown in the top
+panel collapsed onto a master curve defined by their calculated free energy $F$.
+The solid black line is the master curve defined by the Fermi function shown in
+the middle panel.} 
+\label{fig:induction_theory}
+\end{figure}
+
+A key feature of \eqref{eq:foldchange} and \eqref{eq:pact} is that the diverse
+phenomenology of the gene expression induction profile can be collapsed onto
+a single master curve by rewriting the input-output function in terms of the
+free energy $F$ [also called the Bohr parameter \cite{Phillips2015}],
+\begin{equation}
+\text{fold-change} = \left(1 + e^{-\beta F}\right)^{-1},
+\label{eq:collapse}
+\end{equation}
+where
+\begin{equation}
+F = -k_BT \log\pact(c) - k_BT\log\left({R \over N_{NS}}\right) + \Delta\varepsilon_{RA}.
+\label{eq:Bohr}
+\end{equation}
+Hence, if different combinations of parameters yield the same free energy,
+they will give rise to the same fold-change in gene expression, enabling us
+to collapse multiple regulatory scenarios onto a single curve. This can be
+seen in Fig.~\ref{fig:induction_theory}(C) where eighteen unique inducer
+titration profiles of a LacI simple repression architecture collected and
+analyzed in Razo-Mejia \textit{et al.} 2018 \cite{Razo-Mejia2018} collapse onto a
+single master curve. The tight distribution about this curve reveals that the
+fold-change across a variety of genetically distinct individuals can be
+adequately described by a small number of parameters. Beyond predicting the
+induction profiles of different strains, the method of data collapse inspired
+by \eqref{eq:collapse} and \eqref{eq:Bohr} can be used as a tool to identify
+mechanistic changes in the regulatory architecture \cite{Swem2008}. Similar data collapse approaches
+have been used previously in such a manner and have proved vital for
+distinguishing between changes in parameter values and changes in the
+fundamental behavior of the system \cite{Swem2008, Keymer2006}.
+
+Assuming that a given mutation does not result in a non-functional protein, it
+is reasonable to say that any or all of the parameters in \eqref{eq:foldchange}
+can be affected by the mutation, changing the observed induction profile and therefore the free 
+energy. To examine how the free energy of a mutant $F\perst$
+differs from that of the wild-type $F\refst$, we define $\Delta F = F\perst -
+F\refst$, which has the form
+\begin{equation}
+    \begin{aligned}
+\Delta F = -k_BT\log\left({p_\text{act}\perst(c) \over  p_\text{act}\refst(c)}\right) &- k_BT \log\left({R\perst \over R\refst}\right)\\
+ &+ (\Delta\varepsilon_{RA}\perst - \Delta\varepsilon_{RA}\refst).
+    \end{aligned}
+    \label{eq:delF}
+\end{equation}
+
+$\Delta F$ describes how a mutation translates a point across the master
+curve shown in Fig. \ref{fig:induction_theory}(C). As we will show in the
+coming paragraphs (illustrated in Fig.
+\ref{fig:deltaF_theory}), this formulation coarse grains the myriad
+parameters shown in \eqref{eq:foldchange} and \eqref{eq:pact} into three
+distinct quantities, each with different sensitivities to parametric changes. By
+examining how a mutation changes the $\Delta F$ as a function of the inducer
+concentration, one can draw conclusions as to which parameters have been
+modified based solely on the shape of the curve.
+To help the reader understand how various perturbations to the parameters
+tune the free energy, we have hosted an interactive figure on the dedicated  
+\href{http://www.rpgroup.caltech.edu/mwc_mutants}{paper website} which makes
+exploration of parameter space a simpler task.
+
+
+The first term in \eqref{eq:delF} is the log ratio of the probability of a
+mutant repressor being active relative to the wild type at a given inducer concentration $c$. This quantity defines how
+changes to any of the allosteric parameters -- such as inducer binding
+constants $K_A$ and $K_I$ or active/inactive state energetic difference
+$\Delta\varepsilon_{AI}$ -- alter the free energy $F$, which can be interpreted
+as the free energy difference between the
+repressor bound and unbound states of the promoter. Fig.
+\ref{fig:deltaF_theory} (A) illustrates how changes to the inducer binding
+constants $K_A$ and $K_I$ alone alter the induction profiles and resulting
+free energy as a function of the inducer concentration. In the limit where $c
+= 0$, the values of $K_A$ and $K_I$ do not factor into the calculation of
+$p_\text{act}(c)$ given by \eqref{eq:pact}, meaning that
+$\Delta\varepsilon_{AI}$ is the lone parameter setting the residual activity
+of the repressor. Thus, if only $K_A$ and $K_I$ are altered by a mutation,
+then $\Delta F$ should be $0\, k_BT$ when $c = 0$, illustrated by the overlapping
+red, purple, and grey curves in the right-hand plot of Fig.
+\ref{fig:deltaF_theory}(A). However, if $\Delta\varepsilon_{AI}$ is
+influenced by the mutation (either alone or in conjunction with $K_A$ and
+$K_I$), the leakiness will change, resulting in a non-zero $\Delta F$ when
+$c=0$. This is illustrated in Fig. \ref{fig:deltaF_theory} (B) where
+$\Delta\varepsilon_{AI}$ is the only parameter affected by the
+mutation. 
+
+It is important to note that for a mutation which perturbs only the inducer binding constants, the
+dependence of $\Delta F$ on the inducer concentration can be non-monotonic. While the precise values of $K_A$ and $K_I$
+control the sensitivity of the repressor to inducer concentration, it
+is the ratio $K_A / K_I$ that defines whether this non-monotonic behavior is
+observed. This can be seen more clearly when we consider the limit of saturating
+inducer concentration,
+\begin{equation}
+    \lim\limits_{c \rightarrow \infty} \log\left({p_\text{act}\perst \over p_\text{act}\refst}\right) \approx \log\left[{1 + e^{-\beta\Delta\varepsilon_{AI}\refst} \left({K_A\refst \over K_I\refst}\right)^n \over 1 + e^{-\beta\Delta\varepsilon_{AI}\refst} \left({K_A\perst \over K_I\perst}\right)^n}\right]
+    \label{eq:kaki_sat_c},
+\end{equation}
+which illustrates that $\Delta F$ returns to zero at saturating inducer
+concentration when the ratio $K_A / K_I$ is the same for both the
+mutant and wild-type repressors, so long as $\Delta\varepsilon_{AI}$ is
+unperturbed. Non-monotonicity can \textit{only} be achieved by changing $K_A$
+and $K_I$ and
+therefore serves as a diagnostic for classifying mutational effects reliant
+solely on  measuring the change in free energy. A rigorous proof of this
+non-monotonic behavior given changing $K_A$ and $K_I$ can be found in  the SI text.
+
+
+The second term in \eqref{eq:delF} captures how changes in the repressor
+copy number contributes to changes in free energy. It is important to note that this
+contribution to the free energy change depends on the total number of
+repressors in the cell, not just those in the active state. This emphasizes
+that changes in the expression of the repressor are energetically divorced
+from changes to the allosteric nature of the repressor. As a consequence, the
+change in free energy is constant for all inducer concentrations, as is
+schematized in Fig. \ref{fig:deltaF_theory}(C). Because the magnitude of the change
+in free energy scales logarithmically with changing repressor copy number, a mutation
+which increases expression from 1 to 10 repressors per cell is more impactful
+from an energetic standpoint ($k_BT \log(10) \approx 2.3\,  k_BT$) than an
+increase from 90 to 100 ($k_BT \log(100/90) \approx 0.1\, k_BT$). Appreciable
+changes in the free energy only arise when variations in the repressor copy
+number are larger than or comparable to an order of magnitude. Changes of
+this magnitude are certainly possible from a single point mutation, as it has
+been shown that even synonymous substitutions can drastically change
+translation efficiency \cite{Frumkin2018}.
+
+The third and final term in \eqref{eq:delF} is the difference
+in the DNA binding energy between the mutant and wild-type repressors. All else
+being equal, if the
+mutated state binds more tightly to the DNA than the wild type
+($\Delta\varepsilon_{RA}\refst > \Delta\varepsilon_{RA}\perst$), the net change
+in the free energy is negative, indicating that the repressor bound states
+become more energetically favorable due to the mutation.
+Much like in the case of changing repressor copy number, this quantity
+is independent of inducer concentration and is therefore also constant
+[Fig. \ref{fig:deltaF_theory}(D)]. However, the
+magnitude of the change in free energy is linear with DNA binding affinity 
+while it is logarithmic with respect to changes in the repressor copy number. Thus, to
+change the free energy by $1\, k_BT$, the repressor copy number must change
+by a factor of $\approx 2.3$ whereas the DNA binding energy must change by $1\, k_BT$. 
+
+The unique behavior of each quantity in \eqref{eq:delF} and its sensitivity with
+respect to the parameters makes $\Delta F$ useful as a diagnostic tool to classify
+mutations. Given a set of fold-change measurements, a simple rearrangement of
+\eqref{eq:collapse} permits the direct calculation of the free energy, assuming
+that the underlying physics of the regulatory architecture has not changed. Thus,
+it becomes possible to experimentally test the general assertions made in Fig.
+\ref{fig:deltaF_theory}.
+
+\begin{figure}[t]
+        \centering
+        \includegraphics{chapter_03_evolution/figs/Fig2.pdf}
+    \caption[Parametric changes due to mutations alter the free energy.]{The first column schematizes
+    the changed parameters and the second column reflects which quantity in
+    \eqref{eq:delF} is affected. The third column shows representative induction
+    profiles from mutants which have smaller (red) and larger (purple) values for
+    the parameters than the wild-type (grey). The fourth and fifth columns illustrate how the
+    free energy is changed as a result. Purple and red arrows indicate the direction
+    in which the points are translated about the master curve. Three concentrations
+    (points labeled 1, 2, and 3) are shown  to illustrate how each point is
+    moved in free energy space. An interactive version of this figure can be
+    found on the \href{http://rpgroup.caltech.edu/mwc_mutants}{paper website}.}
+    \label{fig:deltaF_theory}
+\end{figure}
+    
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{DNA Binding Domain Mutations}
+With this arsenal of analytic diagnostics, we can begin to explore the
+mutational space of the repressor and map these mutations to the biophysical
+parameters they control. As one of the most thoroughly studied transcription
+factors, LacI has been subjected to numerous crystallographic and mutational
+studies \cite{Daber2007, Daber2009a, Lewis1996, Swerdlow2014}. One such work
+generated a set of point mutations in the LacI repressor and
+examined the diversity of the phenotypic response to different allosteric
+effectors \cite{Daber2011a}. However, several experimental variables were
+unknown, precluding precise calculation of $\Delta F$ as presented in the
+previous section. In Ref. \cite{Daber2011a}, the repressor variants and the
+fluorescence reporter were expressed from separate plasmids. As the copy numbers
+of these plasmids fluctuate in the population, both the population average
+repressor copy number and the number of regulated promoters were unknown. Both of these
+quantities have been shown previously to significantly alter the measured gene
+expression and calculation of $\Delta F$ is dependent on knowledge of their values. While the approach presented in Ref. \cite{Daber2011a} considers the
+Lac repressor as an MWC molecule, the copy numbers of the repressor and
+the reporter gene were swept into an effective parameter ${R \over K_{DNA}}$,
+hindering our ability to distinguish between changes in repressor copy number or
+in DNA binding energy. To
+test our hypothesis of free energy differences resulting from various parameter
+perturbations, we used the dataset in Ref. \cite{Daber2011a} as a guide and
+chose a subset of the mutations to quantitatively dissect. To control copy
+number variation, the mutant repressors and the reporter gene were integrated
+into the \textit{E. coli} chromosome where the copy numbers are known and
+tightly controlled \cite{Garcia2011, Razo-Mejia2018}. Furthermore, the mutations
+were paired with ribosomal binding sties where the level of translation of the
+wild-type repressor had been directly measured previously\cite{Garcia2011}.
+
+
+We made three amino acid substitutions (Y17I, Q18A, and Q18M) that are
+critical for the DNA-repressor interaction. These mutations were introduced
+into the \textit{lacI} sequence used in Garcia and Phillips 2011
+\cite{Garcia2011} with four different ribosomal binding site sequences that
+were shown (via quantitative Western blotting)
+ to tune the wild-type
+repressor copy number across three orders of magnitude. These mutant
+constructs were integrated into the \textit{E. coli} chromosome harboring a
+Yellow Fluorescent Protein (YFP) reporter. The YFP promoter included
+the native O2 LacI operator sequence which the wild-type LacI repressor binds
+with high specificity ($\Delta\varepsilon_{RA} = -13.9\, k_BT$). The
+fold-change in gene expression for each mutant across twelve concentrations
+of IPTG was measured via flow cytometry. As we mutated only a single amino
+acid with the minimum number of base pair changes to the codons from the
+wild-type sequence, we find it unlikely that the repressor copy number was
+drastically altered from those reported in Ref. \cite{Garcia2011} for the
+wild-type sequence paired with the same ribosomal binding site sequence. In
+characterizing the effects of these DNA binding mutations, we take the
+repressor copy number to be unchanged. Any error introduced by this assumption
+should be manifest as a larger than predicted systematic shift in the free
+energy change when the repressor copy number is varied.
+
+
+\begin{figure}
+\centering
+\includegraphics{chapter_03_evolution/figs/Fig3.pdf}
+\caption[Induction profiles and free energy differences of DNA binding
+domain mutations.]{Each column corresponds to the highlighted mutant at the top of the
+figure. Each strain was paired with the native O2 operator sequence. White-faced points correspond to the strain for each mutant
+from which the DNA binding energy was estimated.  (A) Induction profiles of
+each mutant at four different repressor copy numbers as a function of the
+inducer concentration. Points correspond to the mean fold-change in gene
+expression of six to ten biological replicates. Error bars are the standard
+error of the mean. Shaded regions demarcate the 95\% credible region of the
+induction profile generated by the estimated DNA binding energy. (B) Data
+collapse of all points for each mutant shown in (A) using only the DNA
+binding energy estimated from a single repressor copy number. Points
+correspond to the average fold-change in gene expression of six to ten
+biological replicates. Error bars are standard error of the mean. Where error
+bars are not visible, the relative error in measurement is smaller than the
+size of the marker. (C) The change in the free energy resulting from each
+mutation as a function of the inducer concentration. Points correspond to the
+median of the marginal posterior distribution for the free energy. Error bars
+represent the upper and lower bounds of the 95\% credible region. Points in
+(A) at the detection limits of the flow cytometer (near fold-change values of
+0 and 1) were neglected for calculation of the $\Delta F$. The IPTG
+concentration is shown on a symmetric log scale with linear scaling ranging from
+$0$ to $10^{-2}\,\mu$M and log scaling elsewhere. The shaded red lines in (C) correspond to the 95\% credible region of
+our predictions for $\Delta F$ based solely on estimation of
+$\Delta\varepsilon_{RA}$ from the strain with $R=260$ repressors per cell.}
+\label{fig:DNA_muts}
+\end{figure}
+
+
+A na\"{i}ve hypothesis for the effect of a mutation in the DNA binding domain is that
+\textit{only} the DNA binding energy is affected. This hypothesis appears to
+contradict the core principle of allostery in that ligand binding in one domain
+influences binding in another, suggesting that changing
+\text{any} parameter modifies them all. The characteristic curves summarized in Fig.
+\ref{fig:deltaF_theory} give a means to  discriminate between these two
+hypotheses by examining the change in the free energy. Using a single induction profile
+(white-faced points in Fig. \ref{fig:DNA_muts}), we estimated the DNA binding
+energy using Bayesian inferential methods, the details of which are thoroughly discussed in the Materials and Methods as
+well as the SI text. The shaded red region for each mutant in Fig.
+\ref{fig:DNA_muts} represents the 95\% credible region of this fit whereas
+all other shaded regions are 95\% credible regions of the predictions for other repressor copy
+numbers. We find that redetermining only the DNA binding energy accurately
+captures the majority of the induction profiles, indicating that other parameters
+are unaffected. One exception is for the lowest
+repressor copy numbers ($R = 60$ and $R=124$ per cell) of mutant Q18A
+at low concentrations of IPTG. However, we note that this disagreement is
+comparable to that observed for the wild-type repressor binding to the weakest
+operator in Razo-Mejia \textit{et al.} 2018 \cite{Razo-Mejia2018}, illustrating that
+our model is imperfect in characterizing weakly repressing architectures.
+Including other parameters in the fit (such as $\Delta\varepsilon_{AI}$) does
+not significantly improve the accuracy of the predictions. Furthermore, the magnitude of
+this disagreement also depends on the choice of the fitting strain (see SI
+text).
+
+
+Mutations Y17I and Q18A both weaken the affinity of the repressor to the DNA 
+relative to the wild type strain with binding energies of $-9.9 ^{+0.1}_{-0.1}\, k_BT$ and
+$-11.0^{+0.1}_{-0.1}\, k_BT$, respectively. Here we report the median of the
+inferred posterior probability distribution with the superscripts and subscripts
+corresponding to the upper and lower bounds of the 95\% credible region. 
+These binding energies are comparable to that of the wild-type
+repressor affinity to the native LacI operator sequence O3, with a DNA binding
+energy of $-9.7\, k_BT$. The mutation Q18M increases the strength
+of the DNA-repressor interaction relative to the wild-type repressor with a
+binding energy of $-15.43^{+0.07}_{-0.06}\, k_BT$, comparable to the
+affinity of the wild-type repressor to the native O1 operator sequence
+($-15.3\, k_BT$). It is notable that a single amino acid substitution
+of the repressor is capable of changing the strength of the DNA binding
+interaction well beyond that of many single base-pair mutations in the operator
+sequence \cite{Barnes2018, Garcia2011}.
+
+Using the new DNA binding energies, we can collapse all measurements of
+fold-change as a function of the free energy as shown in Fig.
+\ref{fig:DNA_muts}(B). This allows us to test the diagnostic power of the
+decomposition of the free energy described in Fig. \ref{fig:deltaF_theory}. To 
+compute the $\Delta F$ for each mutation, we inferred the observed
+mean free energy of the mutant
+strain for each inducer concentration and repressor copy number (see Materials and Methods
+as well as the SI text for a detailed explanation of the inference). We note
+that in the limit of extremely low or high fold-change, the inference of the
+free energy is either over- or under-estimated, respectively, introducing a
+systematic error. Thus, points which are close to these limits are omitted in
+the calculation of $\Delta F$. We direct the reader to the SI text for a
+detailed discussion of this systematic error. With a measure of $F\perst$
+for each mutant at each repressor copy number, we compute the difference in free
+energy relative to the wild-type strain with the same repressor copy number and operator sequence,
+restricting all variability in $\Delta F$ solely to changes in
+$\Delta\varepsilon_{RA}$. 
+
+The change in free energy for each mutant is shown in Fig.
+\ref{fig:DNA_muts}(C). It can be seen that the $\Delta F$ for each mutant is
+constant as a function of the inducer concentration and is concordant with the
+prediction generated from fitting $\Delta\varepsilon_{RA}$ to a single repressor
+copy number [red lines Fig. \ref{fig:DNA_muts}(C)]. This is in line with the
+predictions outlined in Fig. \ref{fig:deltaF_theory}(C) and (D), indicating that
+the allosteric parameters are "insulated", meaning they are not affected by the
+DNA binding domain mutations. As the $\Delta F$ for all repressor copy numbers collapses onto the
+prediction, we can say that the expression of the repressor itself is the same
+or comparable with that of the wild type. If the repressor copy number were perturbed in addition to $\Delta
+\varepsilon_{RA}$, one would expect a shift away from the prediction that scales logarithmically
+with the change in repressor copy number. However, as the $\Delta F$
+is approximately the same for each repressor copy number, it can be surmised
+that the mutation does not significantly change the expression or folding
+efficiency of the repressor itself.  These results allow us to state that the DNA binding energy
+$\Delta\varepsilon_{RA}$ is the only parameter modified by the DNA mutants
+examined.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Inducer Binding Domain Mutations}
+Much as in the case of the DNA binding mutants, we cannot safely assume
+\textit{a priori} that
+a given mutation in the inducer binding domain affects only the inducer
+binding constants $K_A$ and $K_I$. While it is easy to associate the inducer
+binding constants with the inducer binding domain, the critical parameter in
+our allosteric model $\Delta\varepsilon_{AI}$ is harder to restrict to a
+single spatial region of the protein. As $K_A$, $K_I$, and
+$\Delta\varepsilon_{AI}$ are all parameters dictating the allosteric
+response, we consider two hypotheses in which inducer binding mutations alter
+either all three parameters or only $K_A$ and $K_I$.
+
+We made four point mutations within the inducer binding domain of LacI (F161T, Q291V,
+Q291R, and Q291K) that have been shown previously to alter binding to
+multiple allosteric effectors \cite{Daber2011a}. In contrast to the DNA binding
+domain mutants, we paired the inducer binding domain mutations with the three
+native LacI operator sequences (which have various affinities for the repressor)
+and a single ribosomal binding site sequence. This ribosomal binding site sequence, as reported in 
+\cite{Garcia2011}, expresses the wild-type LacI repressor
+to an average copy number of approximately $260$ per cell. As the free energy
+differences resulting from point mutations in the DNA binding domain can be
+described solely by changes to $\Delta\varepsilon_{RA}$, we continue under
+the assumption that the inducer binding domain mutations do not significantly alter the repressor
+copy number. 
+
+\begin{figure}[t]
+        \centering
+        \includegraphics{chapter_03_evolution/figs/Fig4.pdf}
+        \caption[Induction profiles and free energy differences of inducer
+        binding domain mutants.]{White faced points represent the strain to
+        which the parameters were fit, namely the O2 operator sequence. Each column corresponds to the mutant
+        highlighted at the top of the figure. All strains have $R = 260$ per
+        cell. (A) The fold-change in gene expression as a function of the
+        inducer concentration for three operator sequences of varying 
+        strength. Dashed lines correspond to the curve of best fit resulting
+        from fitting $K_A$ and $K_I$ alone. Shaded curves correspond to the
+        95\% credible region of the induction profile determined from
+        fitting $K_A$, $K_I$, and $\Delta\varepsilon_{AI}$. Points
+        correspond to the mean measurement of six to twelve biological
+        replicates. Error bars are the standard error of the mean. (B) Points
+        in (A) collapsed as a function of the free energy calculated from
+        redetermining $K_A$, $K_I$, and $\Delta\varepsilon_{AI}$. (C) Change
+        in free energy resulting from each mutation as a function of the
+        inducer concentration. Points correspond to the median of the
+        posterior distribution for the free energy. Error bars represent the
+        upper and lower bounds of the 95\% credible region. Shaded curves are
+        the predictions. IPTG concentration is shown on a symmetric log scaling
+        axis with the linear region spanning from $0$ to $10^{-2}\,\mu$M and log
+        scaling elsewhere.}
+        \label{fig:IND_muts}
+\end{figure}
+
+The induction profiles for these four mutants are shown in Fig.
+\ref{fig:IND_muts}(A). Of the mutations chosen, Q291R and Q291K appear to
+have the most significant impact,  with Q291R abolishing the characteristic
+sigmoidal titration curve entirely. It is notable that both Q291R and Q291K
+have elevated expression in the absence of inducer compared to the other two
+mutants paired with the same operator sequence. Panel (A) in Fig.
+\ref{fig:deltaF_theory} illustrates that if only $K_A$ and $K_I$ were being
+affected by the mutations, the fold-change should be identical for all mutants
+in the absence of inducer. This discrepancy in the observed leakiness
+immediately suggests that more than $K_A$ and $K_I$ are affected for Q291K
+and Q291R.
+
+Using a single induction profile for each mutant (shown in Fig. \ref{fig:IND_muts} as white-faced circles), we inferred the parameter
+combinations for both hypotheses and drew predictions for the induction
+profiles with other operator sequences. We find that the simplest hypothesis (in
+which only $K_A$ and $K_I$ are
+altered) does not permit accurate prediction of most induction profiles.
+These curves, shown as dotted lines in Fig. \ref{fig:IND_muts}(A), fail
+spectacularly in
+the case of Q291R and Q291K, and undershoot the observed profiles for F161T
+and Q291V, especially when paired with the weak operator sequence O3. The
+change in the leakiness for Q291R and Q291K is particularly evident as the
+expression at $c = 0$ should be identical to the wild-type repressor under this hypothesis.
+Altering only $K_A$ and $K_I$ is not sufficient to accurately predict the
+induction profiles for F161T and Q291V, but not to the same degree as Q291K
+and Q291R. The disagreement is most evident for the weakest operator O3
+[green lines in Fig. \ref{fig:IND_muts}(A)], though we have discussed
+previously that the induction profiles for weak operators are difficult to
+accurately describe and can result in comparable disagreement for the
+wild-type repressor \cite{Razo-Mejia2018, Barnes2018}.
+
+Including $\Delta\varepsilon_{AI}$ as a perturbed parameter in addition to
+$K_A$ and $K_I$ improves the predicted profiles for all four mutants. By
+fitting these three parameters to a single strain, we are able to accurately
+predict the induction profiles of other operators as seen by the shaded lines
+in Fig. \ref{fig:IND_muts}(A). With these modified parameters, all
+experimental measurements collapse as a function of their free energy as
+prescribed by \eqref{eq:collapse} [Fig. \ref{fig:IND_muts}(B)]. All four
+mutations significantly diminish the binding affinity of both states of the
+repressor to the inducer, as seen by the estimated parameter values reported in
+Tab. \ref{tab:ind_params}. As evident in the data alone, Q291R abrogates
+inducibility outright ($K_A \approx K_I$).
+For Q291K, the active state of the
+repressor can no longer bind inducer whereas the inactive state binds with
+weak affinity. The remaining two mutants, Q291V and F161T, both show
+diminished binding affinity of the inducer to both the active and inactive
+states of the repressor relative to the wild-type. 
+
+\begin{table}[t]
+\centering
+    \caption{Inferred values of $K_A$, $K_I$, and $\Delta\varepsilon_{AI}$ for 
+             inducer binding mutants}
+    \begin{tabular}{lcccr}
+    Mutant & $K_A$  & $K_I$  & $\Delta\varepsilon_{AI}$ [$k_BT$] & Reference \\
+    \midrule
+    WT & $139^{+29}_{-22}\,\mu$M & $0.53^{+0.04}_{-0.04}\,\mu$M & 4.5 & \cite{Razo-Mejia2018}\\
+    &&&&\\
+    F161T & $165^{+90}_{-65}\,\mu$M & $3^{+6}_{-3}\,\mu$M & $1^{+5}_{-2}$
+    & This study\\
+    &&&&\\
+    Q291V & $650^{+450}_{-250}\,\mu$M & $8^{+8}_{-8}\,\mu$M &
+    $3^{+6}_{-3}$ & This study\\
+    &&&&\\
+    Q291K & $> 1$ mM & $310^{+70}_{-60}\,\mu$M & $-3.11^{+0.07}_{-0.07}$ &
+    This study\\
+    &&&&\\
+    Q291R & $9_{-9}^{+20}\,\mu$M & $8^{+20}_{-8}\,\mu$M & $-2.35^{+0.01}_{-0.09}$ & This study\\
+    \bottomrule
+    \label{tab:ind_params}
+    \end{tabular}
+\end{table} 
+
+Given the collection of fold-change measurements, we computed the $\Delta F$
+relative to the wild-type strain with the same operator and repressor copy
+number. This leaves differences in $p_{act}(c)$ as the sole contributor to
+the free energy difference, assuming our hypothesis that $K_A$, $K_I$, and
+$\Delta\varepsilon_{AI}$ are the only perturbed parameters is correct. The
+change in free energy can be seen in Fig. \ref{fig:IND_muts}(C). For all
+mutants, the free energy difference inferred from the observed fold-change
+measurements falls within error of the predictions generated under the
+hypothesis that $K_A$, $K_I$, and $\Delta\varepsilon_{AI}$ are all affected
+by the mutation [shaded curves in Fig. \ref{fig:IND_muts}(C)]. The profile of
+the free energy change exhibits some of the rich phenomenology illustrated in
+Fig. \ref{fig:deltaF_theory}(A) and (B). Q291K, F161T, and Q291V exhibit a
+non-monotonic dependence on the inducer concentration, a feature that can
+only appear when $K_A$ and $K_I$ are altered. The non-zero $\Delta F$ at
+$c=0$ for Q291R and Q291K coupled with an inducer concentration dependence is
+a telling sign that $\Delta\varepsilon_{AI}$ must be significantly modified.
+This shift in $\Delta F$ is positive in all cases, indicating that
+$\Delta\varepsilon_{AI}$ must have decreased, and that the inactive state
+has become more energetically favorable for these mutants than for the wild-type protein. Indeed
+the estimates for $\Delta\varepsilon_{AI}$ (Tab. \ref{tab:ind_params})
+reveal both mutations Q291R and Q291K make
+the inactive state more favorable than the active state. Thus, for these two
+mutations, only $\approx 10\%$ of the repressors are active in the absence of
+inducer, whereas the basal active fraction is $\approx 99\%$ for the wild-type
+repressor \cite{Razo-Mejia2018}. 
+
+We note that the parameter values reported here
+disagree with those reported in Ref. \cite{Daber2011a}. This disagreement stems
+from different assumptions regarding the residual activity of the repressor in
+the absence of inducer and the parametric degeneracy of the MWC model without a
+concrete independent measure of $\Delta\varepsilon_{AI}$. A detailed discussion
+of the difference in parameter values between our previous work
+\cite{Razo-Mejia2018}, that of Daber \textit{et al.} 2011 \cite{Daber2011a}, and
+those of other seminal works \cite{OGorman1980, Daber2009} can be found in the
+SI text.
+
+Taken together, these parametric changes diminish the response of the regulatory
+architecture as a whole to changing inducer concentrations. They furthermore
+reveal that the parameters which govern the allosteric response are 
+interdependent and no single parameter is insulated from the others. However, as
+\textit{only} the allosteric parameters are changed, one can
+say that the allosteric parameters as a whole are insulated from the other
+components which define the regulatory response, such as repressor copy number
+and DNA binding affinity. 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Predicting Effects of Pairwise Double Mutations}
+Given full knowledge of each individual mutation, we can draw predictions of the
+behavior of the pairwise double mutants with no free parameters based on the
+simplest null hypothesis of no epistasis. The formalism of $\Delta F$ defined by
+\eqref{eq:delF} explicitly states that the contribution to the free energy
+of the system from the difference in DNA binding energy and the allosteric parameters are
+strictly additive. Thus, deviations from the predicted change in free energy
+would suggest epistatic interactions between the two mutations.
+
+To test this additive model, we constructed nine double mutant strains, each
+having a unique inducer binding (F161T, Q291V, Q291K) and DNA binding
+mutation (Y17I, Q18A, Q18M). To make predictions with an appropriate
+representation of the uncertainty, we computed a large array of induction
+profiles given random draws from the posterior distribution for the DNA binding
+energy (determined from the single DNA binding mutants) as well as from the
+joint posterior for the allosteric parameters (determined from the single
+inducer binding mutants). These predictions, shown in Fig.
+\ref{fig:dbl_muts}(A) and (B) as shaded blue curves, capture all
+experimental measurements of the fold-change [Fig. \ref{fig:dbl_muts}(A)] and
+the inferred difference in free energy [Fig. \ref{fig:dbl_muts}(B)]. The
+latter indicates that there are no epistatic interactions between the
+mutations queried in this work, though if there were, systematic deviations from these
+predictions would shed light on how the epistasis is manifest. 
+
+The precise agreement between the predictions and measurements for Q291K
+paired with either Q18A or Q18M is striking as Q291K drastically changed
+$\Delta\varepsilon_{AI}$ in addition to $K_A$ and $K_I$. Our ability to
+predict the induction profile and free energy change underscores the extent
+to which the DNA binding energy and the allosteric parameters are insulated
+from one another. Despite this insulation, the repressor still functions as
+an allosteric molecule, emphasizing that the mutations we have inserted do not
+alter the pathway of communication between the two domains of
+the protein. 
+As the double mutant Y17I-Q291K exhibits fold-change of approximately $1$
+across all IPTG concentrations [Fig. \ref{fig:dbl_muts}(A)], these mutations
+in tandem make repression so weak it is beyond the limits which are
+detectable by our experiments. As a consequence, we are unable to estimate
+$\Delta F$ nor experimentally verify the corresponding prediction [grey box
+in Fig. \ref{fig:dbl_muts}(B)]. However, as the predicted fold-change in gene
+expression is also approximately $1$ for all $c$, we believe that the
+prediction shown for $\Delta F$ is likely accurate. One would be able to
+infer the $\Delta F$ to confirm these predictions using a more sensitive
+method for measuring the fold-change, such as single-cell microscopy or
+colorimetric assays. 
+
+\begin{figure}
+    \centering
+    \includegraphics{chapter_03_evolution/figs/Fig5.pdf}
+    \caption[Induction and free energy profiles of DNA binding and 
+        inducer binding double mutants.]{(A) Fold-change in gene expression for
+        each double mutant as a function of IPTG. Points and errors correspond
+        to the mean and standard error of six to ten biological replicates.
+        Where not visible, error bars are smaller than the corresponding marker. Shaded
+        regions correspond to the 95\% credible region of the prediction given
+        knowledge of the single mutants. These were generated by drawing 10$^4$
+        samples from the $\Delta\varepsilon_{RA}$ posterior distribution of the
+        single DNA binding domain mutants and the
+        joint probability distribution of $K_A$, $K_I$, and
+        $\Delta\varepsilon_{AI}$ from the single inducer binding domain mutants.
+        (B) The difference in free energy of each double mutant as a function of
+        the reference free energy. Points and errors correspond to the median
+        and bounds of the 95\% credible region of the posterior distribution for
+        the inferred $\Delta F$. Shaded lines region are the predicted change in
+        free energy, generated in the same manner as the shaded lines in (A).
+        All measurements were taken from a strain with 260 repressors per cell
+        paired with a reporter with the native O2 LacI operator sequence. In
+        all plots, the IPTG concentration is shown on a symmetric log axis with
+        linear scaling between $0$ and $10^{-2}\,\mu$M and log scaling elsewhere.}
+    \label{fig:dbl_muts}
+\end{figure}

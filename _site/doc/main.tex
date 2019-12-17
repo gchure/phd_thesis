@@ -1,0 +1,76 @@
+% !TeX root=./main.tex
+\documentclass[10pt]{caltech_thesis}
+\usepackage[hyphens]{url}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{bibunits}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\defaultbibliographystyle{plainnat}
+\renewcommand{\bibsection}{\section*{\refname}}
+
+% macros
+\newcommand{\refst}{^\mathrm{(wt)}}
+\newcommand{\perst}{^\mathrm{(mut)}}
+\newcommand{\pact}{p_\text{act}}
+\begin{document}
+
+\title{The Molecular Biophysics of Physiological and Evolutionary Adaptation}
+\author{Griffin Chure}
+\degreeaward{Doctor of Philosophy}                 
+\university{California Institute of Technology}    
+\address{Pasadena, California}                     
+\unilogo{caltech.png}                                 
+\copyyear{2020}  
+\defenddate{May 1, 2020}          
+\orcid{0000-0002-2216-2057}
+\rightsstatement{Some rights reserved. This thesis is distributed under a
+Creative Commons Attribution License CC-BY 4.0.}
+\maketitle[logo]
+
+\pagebreak
+\topskip0pt
+\vspace*{\fill}
+aah
+\vspace*{\fill}
+\pagebreak
+
+
+\begin{acknowledgements}
+  \input{acknowledgements} 
+\end{acknowledgements}
+
+\begin{abstract}
+  \input{abstract} 
+\end{abstract}
+
+\extrachapter{Published Content and Contributions}
+\begin{publishedcontent}[iknowwhattodo]
+% \nocite{razo-mejia2018, chure2018, phillips2019, chure2019, hirokawa2019}
+\putbib[ownpubs]
+\end{publishedcontent}
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature
+\mainmatter
+\input{chapter_01_introduction/main.tex}
+\input{chapter_02_induction/ch2_main.tex}
+\input{chapter_03_evolution/ch3_main.tex}
+
+
+% \bibliographystyle{plainnat}
+% \bibliography{example}
+
+\appendix
+\chapter{Questionnaire}
+\chapter{Consent Form}
+\printindex
+
+\end{document}
