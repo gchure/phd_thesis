@@ -1,5 +1,5 @@
 % !TeX root=./main.tex
-\documentclass[11pt]{caltech_thesis}
+\documentclass[10pt]{caltech_thesis}
 \usepackage[hyphens]{url}
 \usepackage{lipsum}
 \usepackage{graphicx}
@@ -11,8 +11,14 @@
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{bibunits}
 \usepackage{enumitem}
+\usepackage{amsmath}
 \defaultbibliographystyle{plainnat}
 \renewcommand{\bibsection}{\section*{\refname}}
+
+% macros
+\newcommand{\refst}{^\mathrm{(wt)}}
+\newcommand{\perst}{^\mathrm{(mut)}}
+\newcommand{\pact}{p_\text{act}}
 \begin{document}
 
 \title{The Molecular Biophysics of Physiological and Evolutionary Adaptation}
@@ -28,6 +34,13 @@
 Creative Commons Attribution License CC-BY 4.0.}
 \maketitle[logo]
 
+\pagebreak
+\topskip0pt
+\vspace*{\fill}
+aah
+\vspace*{\fill}
+\pagebreak
+
 
 \begin{acknowledgements}
   \input{acknowledgements} 
@@ -39,7 +52,7 @@ Creative Commons Attribution License CC-BY 4.0.}
 
 \extrachapter{Published Content and Contributions}
 \begin{publishedcontent}[iknowwhattodo]
-\nocite{razo-mejia2018, chure2018, phillips2019, chure2019, hirokawa2019}
+% \nocite{razo-mejia2018, chure2018, phillips2019, chure2019, hirokawa2019}
 \putbib[ownpubs]
 \end{publishedcontent}
 \tableofcontents
@@ -47,15 +60,10 @@ Creative Commons Attribution License CC-BY 4.0.}
 \listoftables
 \printnomenclature
 \mainmatter
-\begin{bibunit}  
 \input{chapter_01_introduction/main.tex}
-\putbib[library]
-\end{bibunit}
+\input{chapter_02_induction/ch2_main.tex}
+\input{chapter_03_evolution/ch3_main.tex}
 
-\begin{bibunit}
-\input{chapter_02_induction/main.tex}
-\putbib[library]
-\end{bibunit}
 
 % \bibliographystyle{plainnat}
 % \bibliography{example}
